@@ -1,29 +1,30 @@
 import React from 'react';
 import './styles.scss';
 
-const scrollToExperiences = () => {
-    console.log('SCROLLING E');
+interface Props {
+    scrollToExperiences: any,
+    scrollToProjects: any,
 };
 
-const scrollToProjects = () => {
-    console.log('SCROLLING P');
-};
+const openResume = () => {
+    console.log("oPNEING");
+}
 
-const scrollToContact = () => {
-    console.log('SCROLLING C');
-};
-
-export default function Navbar() {
+export default function Navbar(props: Props) {
+    const { scrollToExperiences, scrollToProjects } = props;
     return (
         <ul className='navbar_navbar'>
+            <li onClick={scrollToExperiences}>
+                <h5> Summary </h5>
+            </li>
             <li onClick={scrollToExperiences}>
                 <h5> Experiences </h5>
             </li>
             <li onClick={scrollToProjects}>
                 <h5> Projects </h5>
             </li>
-            <li onClick={scrollToContact}>
-                <h5> Contact </h5>
+            <li onClick={openResume}>
+                <h5> Resume </h5>
             </li>
         </ul>
     );
