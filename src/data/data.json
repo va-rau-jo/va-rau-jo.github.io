@@ -1,0 +1,67 @@
+{
+  "logos": {
+    "facebook": "images/facebook.jpeg",
+    "google": "images/google.png"
+  },
+  "internships": [
+    {
+      "accomplishments": ["bla bal", "bla bla2"],
+      "company": "Facebook",
+      "location": "Seattle, WA",
+      "end_date": "November 2021",
+      "remote": true,
+      "role": "Software Engineering Intern",
+      "start_date": "August 2021",
+      "team": "Small Business Products & Growth",
+      "technologies": ["React", "Hack", "End to end testing"]
+    },
+    {
+      "accomplishments": ["bla bal", "bla bla2"],
+      "company": "Google",
+      "end_date": "August 2021",
+      "location": "Seattle, WA",
+      "remote": true,
+      "role": "Software Engineering Intern",
+      "start_date": "June 2021",
+      "team": "Meet Reliability",
+      "technologies": [
+        "Javascript",
+        "Java",
+        "Mock testing",
+        "Dependency Injection"
+      ]
+    },
+    {
+      "accomplishments": ["bla bal", "bla bla2"],
+      "company": "Facebook",
+      "end_date": "September 2020",
+      "location": "Seattle, WA",
+      "remote": true,
+      "role": "Software Engineering Intern",
+      "start_date": "June 2020",
+      "team": "Localization",
+      "technologies": ["React", "Hack", "Front-end"]
+    },
+    {
+      "accomplishments": ["bla bal", "bla bla2"],
+      "company": "Facebook",
+      "end_date": "August 2019",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "role": "Facebook University Intern",
+      "start_date": "June 2019",
+      "technologies": ["Android", "Mobile"]
+    }
+  ],
+  "projects": [
+    {
+      "description": ["App for bla bla bla", "with these features"],
+      "end_date": "December 2021",
+      "name": "Trender",
+      "deployed_url": "Heroku.com",
+      "source_url": "github.com",
+      "start_date": "August 2021",
+      "technologies": ["React", "Node", "APIs"]
+    }
+  ]
+}

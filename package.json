@@ -2,6 +2,7 @@
   "name": "va-rau-jo.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@types/node": "^16.11.15",
     "@types/react": "^17.0.37",
@@ -15,9 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build; rsync -a build~git build/.git",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish": "cd build; git add .; git commit -m \"Build on $(date)\"; git push"
   },
   "eslintConfig": {
     "extends": [

@@ -16,7 +16,7 @@ const scrollToProjects = () => {
 export default function Main() {
   return (
     <div>
-      <header className='main_section1' style={{backgroundImage: 'url(/seattle.jpg)'}}>
+      <header className='main_section1' style={{backgroundImage: 'url(images/seattle.jpg)'}}>
         <div className='main_image_dim'>
           <div className='main_header'>
               <h1 className='main_name'> Victor Araujo </h1>

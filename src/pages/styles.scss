@@ -1,36 +1,36 @@
-@import '../styles/global.scss';
+@import "../styles/global.scss";
 
 .main_contact_div {
-    display: flex;
+  display: flex;
 }
 
 .main_header {
-    align-items: center;
-    display: inline-flex;
-    justify-content: space-between;
-    padding-top: 8px;
-    width: 100%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  width: 100%;
 }
 
 .main_image_dim {
-    background-color: #000000AA;
-    height: 100%;
-    width: 100%;
+  background-color: #000000aa;
+  height: 100%;
+  width: 100%;
 }
 
 .main_name {
-    font-size: $h1;
-    font-weight: 400;
-    margin: 0 0 0 0.5em;
+  font-size: $h1;
+  font-weight: 400;
+  margin: 0 0 0 0.5em;
 }
 
 .main_navbar {
-    margin-right: 2em;
+  margin-right: 2em;
 }
 
 .main_section1 {
-    background-size: 100vw;
-    color: white;
-    height: 75vh;
-    width: 100%;
+  background-size: 100vw;
+  color: white;
+  height: 75vh;
+  width: 100%;
 }

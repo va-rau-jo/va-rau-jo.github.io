@@ -1,49 +1,39 @@
 import React, { useEffect, useState } from 'react';
 import './styles.scss';
+import data from '../../data/data.json';
 
 const Experiences = () => {
-    const [data, setData] = useState([
-        {
-            name: '',
-        }
-    ]);
-
-    const [dataLoaded, setDataLoaded] = useState(false);
-
-    const loadData = async () => {
-        // await fs.readFile('../data/experiences.txt', 'utf8', (error, data) => {
-        //     console.log(data);
-        // });
-
-        const experience = {
-            name: 'test'
-        };
-
-        setData(data.concat(experience));        
-    }
-
-    useEffect(() => {
-        (async () => {
-            console.log("use effect");
-            setDataLoaded(false);
-            await loadData();
-            console.log("data loaded");
-            setDataLoaded(true);
-        })();
-    }, []);
-
+    const logos: {[index: string]:any} = data.logos;
     return (
-        !dataLoaded ? 
-            <></> :
-            <ul className='experiences_list'>
-                {data.map((entry, i) => {
-                    return (
-                        <div key={i}>
-                            {entry.name}
+        <ul className='internships_list'>
+            {data.internships.map((entry, i) => {
+                console.log(logos[entry.company.toLowerCase()]);
+                console.log(entry.company.toLowerCase());
+                console.log(logos);
+                return (
+                    <li className='internships_list_item' key={i}>
+                        <img alt="Company logo" className='internships_logo' src={logos[entry.company.toLowerCase()]} />
+                        <div>
+                            <h5 className='internships_list_item_company'>  {entry.company} </h5>
+                            <div className='internships_date_container'>
+                                <img alt="date" className='internships_icon' src='icons/calendar.png' />
+                                <span> {entry.start_date} - {entry.end_date} </span>
+                            </div>
+                            <div className='internships_date_container'>
+                                <img alt="location" className='internships_icon' src='icons/marker_outline.png' />
+                                <span> {entry.location} {entry.remote ? '(Remote)' : ''} </span>
+                            </div>
+                            {entry.team ? 
+                                <div className='internships_date_container'>
+                                    <img alt="team" className='internships_icon' src='icons/team.png' />
+                                    <span> {entry.team} </span>
+                                </div> : 
+                                null }
                         </div>
-                    );
-                })}
-            </ul>
+                    </li>
+                );
+            })}
+        </ul>
     );
 }
 
