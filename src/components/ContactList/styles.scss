@@ -1,0 +1,35 @@
+@import "../../styles/global.scss";
+
+.contact_icon {
+  height: $h3;
+  width: $h3;
+}
+
+.contact_item {
+  align-items: center;
+  border-radius: $rounded_corner;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  padding: 0.5em;
+  width: 4em;
+}
+
+.contact_item:hover {
+  // TODO: better hover css
+  background-color: #555555;
+}
+
+.contact_label {
+  font-size: $h6;
+  margin: 0.5em 0 0;
+}
+
+.contact_list {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: center;
+}

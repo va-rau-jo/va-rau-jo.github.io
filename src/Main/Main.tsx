@@ -1,5 +1,4 @@
-import { url } from 'inspector';
-import React from 'react';
+import ContactList from '../components/ContactList/ContactList';
 import Experiences from '../components/Experiences/Experiences';
 import Navbar from '../components/Navbar/Navbar';
 import './styles.scss';
@@ -24,16 +23,11 @@ export default function Main() {
                 <Navbar scrollToExperiences={scrollToExperiences} scrollToProjects={scrollToProjects} />
               </div>
           </div>
-          <ul className='main_contact_div'>
-            <li className='contact_icon'>
-              Email
-            </li>
-            
-
-          </ul>
+         <ContactList />
         </div>
       </header>
       <main>
+        <h2 className='main_section_title'> Experiences </h2>
         <Experiences />
       </main>
     </div>
