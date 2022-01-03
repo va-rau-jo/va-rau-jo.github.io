@@ -63,6 +63,58 @@
       "role": "Facebook University Intern",
       "start_date": "June 2019",
       "technologies": ["Android", "Mobile", "Heroku"]
+    },
+    {
+      "accomplishments": [
+        "Participated in a 3-week industry level Android development course",
+        "Developed a unique Android app using Java front-end and Heroku back-end"
+      ],
+      "company": "Facebook",
+      "end_date": "August 2019",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "role": "Facebook University Intern",
+      "start_date": "June 2019",
+      "technologies": ["Android", "Mobile", "Heroku"]
+    },
+    {
+      "accomplishments": [
+        "Participated in a 3-week industry level Android development course",
+        "Developed a unique Android app using Java front-end and Heroku back-end"
+      ],
+      "company": "Facebook",
+      "end_date": "August 2019",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "role": "Facebook University Intern",
+      "start_date": "June 2019",
+      "technologies": ["Android", "Mobile", "Heroku"]
+    },
+    {
+      "accomplishments": [
+        "Participated in a 3-week industry level Android development course",
+        "Developed a unique Android app using Java front-end and Heroku back-end"
+      ],
+      "company": "Facebook",
+      "end_date": "August 2019",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "role": "Facebook University Intern",
+      "start_date": "June 2019",
+      "technologies": ["Android", "Mobile", "Heroku"]
+    },
+    {
+      "accomplishments": [
+        "Participated in a 3-week industry level Android development course",
+        "Developed a unique Android app using Java front-end and Heroku back-end"
+      ],
+      "company": "Facebook",
+      "end_date": "August 2019",
+      "location": "Menlo Park, CA",
+      "remote": false,
+      "role": "Facebook University Intern",
+      "start_date": "June 2019",
+      "technologies": ["Android", "Mobile", "Heroku"]
     }
   ],
   "projects": [

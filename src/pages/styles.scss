@@ -14,13 +14,6 @@ main {
   padding-top: 8px;
 }
 
-.main_image_dim {
-  background-color: #000000aa;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .main_name {
   font-size: $h1;
   font-weight: 400;
@@ -33,8 +26,31 @@ main {
 
 .main_section1 {
   background-size: 100vw;
+  border-bottom: 0.5vh solid black;
   color: white;
   height: 75vh;
+}
+
+// Dims the background image
+.main_section1 > div {
+  background-color: #000000aa;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main_section2 {
+  background-size: 100vw;
+  background-color: #bbbbbb;
+  color: white;
+}
+
+// Dims the background image
+.main_section2 > div {
+  background-color: #000000d6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .main_section_title {

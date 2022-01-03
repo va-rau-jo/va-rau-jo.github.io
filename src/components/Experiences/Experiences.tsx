@@ -17,18 +17,18 @@ const getCell = (entry: any, i: number) => {
 
                 <div className='exp_item_labels'>
                     <div className='exp_label_container'>
-                        <img alt="date" className='exp_label_icon' src='icons/black/calendar.png' />
+                        <img alt="date" className='exp_label_icon' src='icons/white/calendar.png' />
                         <span> {entry.start_date} - {entry.end_date} </span>
                     </div>
                     <div className='exp_label_container'>
-                        <img alt="location" className='exp_label_icon' src='icons/black/marker_outline.png' />
+                        <img alt="location" className='exp_label_icon' src='icons/white/marker.png' />
                         <span> {entry.location} {entry.remote ? '(Remote)' : ''} </span>
                     </div>
                 </div>
                 <div className='exp_item_labels'>
                     {entry.team ? 
                         <div className='exp_label_container'>
-                            <img alt="team" className='exp_label_icon' src='icons/black/team.png' />
+                            <img alt="team" className='exp_label_icon' src='icons/white/team.png' />
                             <span> {entry.team} </span>
                         </div> : 
                         null }
@@ -53,7 +53,7 @@ const getCell = (entry: any, i: number) => {
 }
 
 const Experiences = () => {
-    const timelineHeight = 400 * data.experiences.length;
+    const timelineHeight = 325 * data.experiences.length;
     return (
         <div className='exp_container'>
             <div className='exp_timeline' id='timeline' 

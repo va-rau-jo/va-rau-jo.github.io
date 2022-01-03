@@ -26,9 +26,12 @@ export default function Main() {
          <ContactList />
         </div>
       </header>
-      <main>
-        <h2 className='main_section_title'> Experiences </h2>
-        <Experiences />
+      <main className='main_section2' style={{backgroundImage: 'url(images/icons_med.png)'}}>
+        <div className='main_image_dim'>
+
+          <h2 className='main_section_title'> Experiences </h2>
+          <Experiences />
+        </div>
       </main>
     </div>
   );
