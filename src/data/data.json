@@ -1,22 +1,28 @@
 {
   "logos": {
-    "facebook": "images/facebook.jpeg",
+    "facebook": "images/facebook.png",
     "google": "images/google.png"
   },
-  "internships": [
+  "experiences": [
     {
-      "accomplishments": ["bla bal", "bla bla2"],
+      "accomplishments": [
+        "Implemented several coupon flows for Facebook and Facebook Lite advertisers on web and mobile",
+        "Introduced mobile coupon end-to-end testing and set up experiments to measure impact of launched experiences"
+      ],
       "company": "Facebook",
       "location": "Seattle, WA",
       "end_date": "November 2021",
       "remote": true,
       "role": "Software Engineering Intern",
       "start_date": "August 2021",
-      "team": "Small Business Products & Growth",
+      "team": "Small Business Products",
       "technologies": ["React", "Hack", "End to end testing"]
     },
     {
-      "accomplishments": ["bla bal", "bla bla2"],
+      "accomplishments": [
+        "Designed and implemented a visualization tool for internal debugging of Google Meet meetings",
+        "Implemented front-end with dependency injection and created mocks for unit tests"
+      ],
       "company": "Google",
       "end_date": "August 2021",
       "location": "Seattle, WA",
@@ -32,7 +38,10 @@
       ]
     },
     {
-      "accomplishments": ["bla bal", "bla bla2"],
+      "accomplishments": [
+        "Designed and implemented custom review flow to reduce translation query waste",
+        "Created a Workplace chat bot, internal task bot, and query comparison tool"
+      ],
       "company": "Facebook",
       "end_date": "September 2020",
       "location": "Seattle, WA",
@@ -43,14 +52,17 @@
       "technologies": ["React", "Hack", "Front-end"]
     },
     {
-      "accomplishments": ["bla bal", "bla bla2"],
+      "accomplishments": [
+        "Participated in a 3-week industry level Android development course",
+        "Developed a unique Android app using Java front-end and Heroku back-end"
+      ],
       "company": "Facebook",
       "end_date": "August 2019",
       "location": "Menlo Park, CA",
       "remote": false,
       "role": "Facebook University Intern",
       "start_date": "June 2019",
-      "technologies": ["Android", "Mobile"]
+      "technologies": ["Android", "Mobile", "Heroku"]
     }
   ],
   "projects": [
