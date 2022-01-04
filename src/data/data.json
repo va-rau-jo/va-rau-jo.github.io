@@ -74,8 +74,9 @@
         ". I had to account for failures when too many requests were made, and fetch data in batches."
       ],
       "contribution": "I was the sole contributor to this project.",
+      "deployed_icon": "heroku.png",
       "deployed_url": "https://spotify-trender.herokuapp.com/",
-      "description": "App for bla bla bla",
+      "description": "A web app utilizing the Spotify API to track monthly playlists and improve playlist management",
       "features": ["Does this", "and that of course"],
       "front-end": "ReactJS",
       "name": "Trender",

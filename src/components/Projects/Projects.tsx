@@ -1,7 +1,18 @@
 import './styles.scss';
 import data from '../../data/data.json';
 
+const generateOverlay = (entry: any) => {
+    return (
+        <div className='projects_overlay'>
+            hi
 
+            <div className='projects_ends_div'>
+                <span className='projects_ends_label'> Front-end: </span>
+                <span className='projects_ends_label'> Back-end: </span>
+            </div>
+        </div>
+    );
+}
 
 const Projects = () => {
     return (
@@ -11,14 +22,30 @@ const Projects = () => {
                     <div className='projects_item' key={i}>
                         <div className='projects_overlay_container'>
                             <img alt={entry.name} className='projects_img' src='images/trender.png' />
-                            <div className='projects_overlay'>
-                                hi
-                            </div>
+                            {generateOverlay(entry)}
                         </div>
                         <div className='projects_header_div'>
                             <div className='projects_desc_div'>
                                 <span className='projects_title'> {entry.name} </span>
-                                <span className='projects_description'> {entry.description} </span>
+                                <span className='projects_description'> {entry.description} </span>    
+                            </div>
+                            <div className='projects_deployed_div'>
+                                <div className='projects_deployed_1'>
+                                    <span className='projects_try_label'> Try Now! </span>
+                                    <a className='projects_try_icon' key={i} href={entry.deployed_url} target='_blank'>
+                                        <img  src={'icons/black/' + entry.deployed_icon}  />
+                                    </a>
+                                </div>
+                                <div className='projects_deployed_1'>
+                                    <span className='projects_try_label'> View Source{entry.sources.length > 1 ? 's' : ''} </span>
+                                    <div className='projects_sources'>
+                                        {entry.sources.map((source, i) => (
+                                            <a className='projects_try_icon' key={i} href={source} target='_blank'>
+                                                <img src='icons/black/github.png' />
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
