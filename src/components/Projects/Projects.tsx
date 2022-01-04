@@ -1,8 +1,10 @@
 import './styles.scss';
 import data from '../../data/data.json';
+import React from 'react';
+
+const logos: {[index: string]:any} = data.logos;
 
 const getCell = (entry: any, i: number) => {
-    const logos: {[index: string]:any} = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';
     return (
         <td className='exp_item_container'>
@@ -10,10 +12,12 @@ const getCell = (entry: any, i: number) => {
                 <div className={'exp_company_logo exp_company_logo' + side} >
                     <img alt="Company logo" src={logos[entry.company.toLowerCase()]} />
                 </div>
+
                 <div className='exp_title'>
                     <span className='exp_company_name'> {entry.company} </span>
                     <span className='exp_role'> - {entry.role} </span>
                 </div>
+
                 <div className='exp_item_labels'>
                     <div className='exp_label_container'>
                         <img alt="date" className='exp_label_icon' src='icons/white/calendar.png' />
@@ -51,29 +55,17 @@ const getCell = (entry: any, i: number) => {
     );
 }
 
-const Experiences = () => {
-    const timelineHeight = 370 * data.experiences.length;
+const Projects = () => {
     return (
-        <div className='exp_container'>
-            <div className='exp_timeline' id='timeline' 
-                style={{height: timelineHeight + 'px'}}>
-            </div>
-            <table className='exp_table' cellSpacing='0'>
-                <tbody>
-                    {data.experiences.map((entry, i) => {
-                        const cell = getCell(entry, i);
-                        return (
-                            <tr key={i}>
-                                {i % 2 === 0 ? cell : <td></td>}
-                                {i % 2 === 1 ? cell : <td></td>}
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
+        <div className='projects_container'>
+            {data.projects.map((entry, i) => {
+                <div>
+                    {entry.name}
+                </div>
+            })}
         </div>
         
     );
 }
 
-export default Experiences;
+export default Projects;

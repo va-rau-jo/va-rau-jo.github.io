@@ -2,10 +2,8 @@
 
 // Radius of company logo image
 $logo_radius: 1.5em;
-// Padding between two table items
-$item_padding: 1em;
 // Offset to line up company name and logo
-$company_name_offset: $item_padding + 1;
+$company_name_offset: 2em;
 
 .exp_accomplishments {
   // background-color: #ebebeb;
@@ -73,7 +71,6 @@ $company_name_offset: $item_padding + 1;
 }
 
 .exp_item_container {
-  // border: 1px solid black;
   padding: $company_name_offset 0;
   position: relative;
   width: 50%;
@@ -90,26 +87,16 @@ $company_name_offset: $item_padding + 1;
   width: $h5;
 }
 
-.exp_list_row {
-  width: 100%;
-}
-
-.experiences_work_div {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 0.5em;
+.exp_role {
+  font-size: $h6;
+  font-weight: bold;
+  margin: 0.1em 0 0 0.5em;
 }
 
 .exp_table {
   margin: auto;
   table-layout: fixed;
   width: 80%;
-}
-
-.exp_table_content {
-  background-color: red;
-  width: 50%;
 }
 
 .exp_technologies {
@@ -134,7 +121,15 @@ $company_name_offset: $item_padding + 1;
   background-color: #d4af37;
   margin: auto;
   left: 0;
-  right: 0;
   position: absolute;
+  right: 0;
   width: 3px;
+}
+
+.exp_title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.5em;
 }

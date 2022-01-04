@@ -7,6 +7,11 @@ main {
   text-align: center;
 }
 
+.main_divider {
+  background-color: black;
+  height: 0.5vh;
+}
+
 .main_header {
   align-items: center;
   display: inline-flex;
@@ -26,7 +31,6 @@ main {
 
 .main_section1 {
   background-size: 100vw;
-  border-bottom: 0.5vh solid black;
   color: white;
   height: 75vh;
 }
@@ -51,6 +55,15 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.main_section3 {
+  align-items: center;
+  background-color: #1e74b1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main_section_title {

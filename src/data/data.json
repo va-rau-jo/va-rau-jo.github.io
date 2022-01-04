@@ -63,69 +63,35 @@
       "role": "Facebook University Intern",
       "start_date": "June 2019",
       "technologies": ["Android", "Mobile", "Heroku"]
-    },
-    {
-      "accomplishments": [
-        "Participated in a 3-week industry level Android development course",
-        "Developed a unique Android app using Java front-end and Heroku back-end"
-      ],
-      "company": "Facebook",
-      "end_date": "August 2019",
-      "location": "Menlo Park, CA",
-      "remote": false,
-      "role": "Facebook University Intern",
-      "start_date": "June 2019",
-      "technologies": ["Android", "Mobile", "Heroku"]
-    },
-    {
-      "accomplishments": [
-        "Participated in a 3-week industry level Android development course",
-        "Developed a unique Android app using Java front-end and Heroku back-end"
-      ],
-      "company": "Facebook",
-      "end_date": "August 2019",
-      "location": "Menlo Park, CA",
-      "remote": false,
-      "role": "Facebook University Intern",
-      "start_date": "June 2019",
-      "technologies": ["Android", "Mobile", "Heroku"]
-    },
-    {
-      "accomplishments": [
-        "Participated in a 3-week industry level Android development course",
-        "Developed a unique Android app using Java front-end and Heroku back-end"
-      ],
-      "company": "Facebook",
-      "end_date": "August 2019",
-      "location": "Menlo Park, CA",
-      "remote": false,
-      "role": "Facebook University Intern",
-      "start_date": "June 2019",
-      "technologies": ["Android", "Mobile", "Heroku"]
-    },
-    {
-      "accomplishments": [
-        "Participated in a 3-week industry level Android development course",
-        "Developed a unique Android app using Java front-end and Heroku back-end"
-      ],
-      "company": "Facebook",
-      "end_date": "August 2019",
-      "location": "Menlo Park, CA",
-      "remote": false,
-      "role": "Facebook University Intern",
-      "start_date": "June 2019",
-      "technologies": ["Android", "Mobile", "Heroku"]
     }
   ],
   "projects": [
     {
-      "description": ["App for bla bla bla", "with these features"],
-      "end_date": "December 2021",
+      "back-end": "Node",
+      "challenges": [
+        "One of the biggest challenges was dealing with the",
+        "Spotify API rate limits",
+        ". I had to account for failures when too many requests were made, and fetch data in batches."
+      ],
+      "contribution": "I was the sole contributor to this project.",
+      "deployed_url": "https://spotify-trender.herokuapp.com/",
+      "description": "App for bla bla bla",
+      "features": ["Does this", "and that of course"],
+      "front-end": "ReactJS",
       "name": "Trender",
-      "deployed_url": "Heroku.com",
-      "source_url": "github.com",
-      "start_date": "August 2021",
-      "technologies": ["React", "Node", "APIs"]
+      "sources": [
+        "https://github.com/va-rau-jo/Trender",
+        "https://github.com/va-rau-jo/Trender-Server"
+      ],
+      "technologies": [
+        "React",
+        "Node",
+        "APIs",
+        "Javascript",
+        "Promises",
+        "JSON"
+      ],
+      "year": "2021"
     }
   ]
 }
