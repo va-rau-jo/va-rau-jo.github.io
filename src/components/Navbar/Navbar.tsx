@@ -8,6 +8,7 @@ interface Props {
 
 const openResume = () => {
     console.log("oPNEING");
+
 }
 
 export default function Navbar(props: Props) {
@@ -15,7 +16,7 @@ export default function Navbar(props: Props) {
     return (
         <ul className='navbar_navbar'>
             <li onClick={scrollToExperiences}>
-                <h5> Summary </h5>
+                <h5> Summary / Contact ??? </h5>
             </li>
             <li onClick={scrollToExperiences}>
                 <h5> Experiences </h5>
@@ -24,7 +25,9 @@ export default function Navbar(props: Props) {
                 <h5> Projects </h5>
             </li>
             <li onClick={openResume}>
-                <h5> Resume </h5>
+                <a className='navbar_anchor' href='resume.pdf' target='_blank'>
+                  <h5> Resume </h5>
+                </a>
             </li>
         </ul>
     );

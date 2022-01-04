@@ -5,21 +5,19 @@ import Projects from '../components/Projects/Projects';
 import './styles.scss';
 
 const scrollToElement = (element: HTMLElement) => {
-  const startingY = window.pageYOffset;
-  const diff = element?.getBoundingClientRect().y - startingY;
-  const duration = 1000;
+  const startY = window.pageYOffset;
+  const diff = element?.getBoundingClientRect().y - startY;
+  const duration_ms = 1000;
   var start: number;
 
   window.requestAnimationFrame(function step(timestamp) {
     if (!start) start = timestamp;
-    // Elapsed milliseconds since start of scrolling.
+    
     var time = timestamp - start;
-    // Get percent of completion in range [0, 1].
-    var percent = Math.min(time / duration, 1);
+    var percent = Math.min(time / duration_ms, 1);
+    window.scrollTo(0, startY + diff * percent);
 
-    window.scrollTo(0, startingY + diff * percent);
-
-    if (time < duration) {
+    if (time < duration_ms) {
       window.requestAnimationFrame(step);
     }
   });

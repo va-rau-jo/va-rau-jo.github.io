@@ -3,13 +3,20 @@ import data from '../../data/data.json';
 
 const generateOverlay = (entry: any) => {
     return (
-        <div className='projects_overlay'>
-            hi
-
-            <div className='projects_ends_div'>
-                <span className='projects_ends_label'> Front-end: </span>
-                <span className='projects_ends_label'> Back-end: </span>
+        <div className='projects_overlay projects_overlay_grid'>
+            <div>
+                <img className='projects_overlay_icon' src='icons/white/features.png' />
+                <ul className='projects_feature_list'>
+                    {entry.features.map((feature: string, i: number) => (
+                        <li key={i}>
+                            <p> {feature} </p>
+                        </li>
+                    ))}
+                </ul>
             </div>
+            <div> 2 </div>
+            <div> 3 </div>
+            <div> 4 </div>
         </div>
     );
 }
@@ -33,7 +40,7 @@ const Projects = () => {
                                 <div className='projects_deployed_1'>
                                     <span className='projects_try_label'> Try Now! </span>
                                     <a className='projects_try_icon' key={i} href={entry.deployed_url} target='_blank'>
-                                        <img  src={'icons/black/' + entry.deployed_icon}  />
+                                        <img src={'icons/' + entry.deployed_icon}  />
                                     </a>
                                 </div>
                                 <div className='projects_deployed_1'>

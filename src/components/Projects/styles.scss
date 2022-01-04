@@ -38,9 +38,8 @@ $deployed_button_size: 2em;
   padding: 0.25em 0;
 }
 
-.projects_ends_div {
-  display: flex;
-  flex-direction: column;
+.projects_feature_list {
+  list-style-type: none;
 }
 
 .projects_header_div {
@@ -69,11 +68,10 @@ $deployed_button_size: 2em;
 
 // Area for details of project
 .projects_overlay {
-  background-color: #008cba;
+  background-color: #457fa9;
   border-radius: $border_radius_top;
   bottom: 0;
   color: white;
-  display: flex;
   justify-content: center;
   left: 0;
   opacity: 0;
@@ -91,6 +89,25 @@ $deployed_button_size: 2em;
 // On hover -> display overlay
 .projects_overlay_container:hover .projects_overlay {
   opacity: 1;
+}
+
+.projects_overlay_grid {
+  display: grid;
+  // 1fr = 1 fraction, so the 4 cells here
+  // all take up the same fraction of space
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects_overlay_grid > div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.projects_overlay_icon {
+  height: 3em;
+  width: 3em;
 }
 
 .projects_sources {
@@ -112,13 +129,12 @@ $deployed_button_size: 2em;
 }
 
 .projects_try_icon > img {
-  height: $deployed_button_size;
-  width: $deployed_button_size;
+  width: 100%;
 }
 
 .projects_try_icon:hover {
   background-color: #bbbbbb;
-  border-radius: $rounded_corners;
+  border-radius: 4px;
 }
 
 .projects_try_label {
