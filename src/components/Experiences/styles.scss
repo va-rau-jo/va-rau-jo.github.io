@@ -67,7 +67,7 @@ $company_name_offset: 2em;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
-  width: 90%;
+  width: 100%;
 }
 
 .exp_item_container {
@@ -96,7 +96,7 @@ $company_name_offset: 2em;
 .exp_table {
   margin: auto;
   table-layout: fixed;
-  width: 80%;
+  width: 90%;
 }
 
 .exp_technologies {
@@ -113,7 +113,7 @@ $company_name_offset: 2em;
   border-radius: $rounded_corners;
   color: white;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin: 0 0.1em 1em 0;
   padding: 0.5em 1em;
 }
 
@@ -129,7 +129,6 @@ $company_name_offset: 2em;
 .exp_title {
   align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   margin-bottom: 0.5em;
 }

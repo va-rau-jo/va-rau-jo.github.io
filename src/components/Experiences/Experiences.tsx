@@ -1,6 +1,8 @@
 import './styles.scss';
 import data from '../../data/data.json';
 
+const TIMELINE_SCALE = 348;
+
 const getCell = (entry: any, i: number) => {
     const logos: {[index: string]:any} = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';
@@ -52,7 +54,7 @@ const getCell = (entry: any, i: number) => {
 }
 
 const Experiences = () => {
-    const timelineHeight = 370 * data.experiences.length;
+    const timelineHeight = TIMELINE_SCALE * data.experiences.length;
     return (
         <div className='exp_container'>
             <div className='exp_timeline' id='timeline' 
