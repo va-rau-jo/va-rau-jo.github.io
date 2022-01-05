@@ -9,7 +9,6 @@ $overlay_bg_color: #282828;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 95%;
 }
 
 .projects_deployed_div {
@@ -92,6 +91,10 @@ $overlay_bg_color: #282828;
   right: 5px;
 }
 
+.projects_hover_info_tap {
+  display: none;
+}
+
 .projects_img {
   border-radius: $border_radius_top;
   height: 100%;
@@ -110,9 +113,7 @@ $overlay_bg_color: #282828;
 
 // Area for details of project
 .projects_overlay {
-  // TODO: pick color
   background-color: $overlay_bg_color;
-  // background-color: #457fa9;
   border-radius: $border_radius_top;
   bottom: 0;
   color: white;
@@ -274,4 +275,18 @@ $overlay_bg_color: #282828;
   font-size: $h7;
   font-weight: bold;
   text-align: center;
+}
+
+@media only screen and (max-device-width: 800px) {
+  .projects_hover_info_hover {
+    display: none;
+  }
+
+  .projects_hover_info_tap {
+    display: block;
+  }
+
+  .projects_item {
+    width: 100%;
+  }
 }

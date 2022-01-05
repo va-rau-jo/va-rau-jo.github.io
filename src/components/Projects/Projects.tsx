@@ -70,7 +70,8 @@ const Projects = () => {
                     <div className='projects_item' key={i}>
                         <div className='projects_overlay_container'>
                             <div className='projects_hover_info'>
-                                <span> Hover for details </span>
+                                <span className='projects_hover_info_hover'> Hover for details </span>
+                                <span className='projects_hover_info_tap'> Tap for details </span>
                             </div> 
                             <img alt={entry.name} className='projects_img' src='images/trender.png' />
                             {generateOverlay(entry)}
@@ -78,9 +79,7 @@ const Projects = () => {
                         <div className='projects_header_div'>
                             <div className='projects_desc_div'>
                                 <span className='projects_title'> {entry.name} </span>
-                                {/* <div className='projects_description_container'> */}
-                                    <span className='projects_description'> {entry.description} </span>    
-                                {/* </div> */}
+                                <span className='projects_description'> {entry.description} </span>    
                             </div>
                             <div className='projects_deployed_div'>
                                 {entry.deployed_url ? 
