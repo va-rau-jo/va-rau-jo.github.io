@@ -7,6 +7,7 @@
 
 .navbar_navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   padding: 0;
@@ -15,7 +16,7 @@
 .navbar_navbar > li {
   cursor: pointer;
   font-size: $h4;
-  margin: 0 0.5em;
+  margin: 0 0.5em 0.5em 0.5em;
   padding: 0;
 }
 

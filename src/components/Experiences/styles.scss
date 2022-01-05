@@ -10,14 +10,13 @@ $company_name_offset: 2em;
   border-radius: $rounded_corners;
   list-style-type: none;
   margin: 0 2em;
-  padding: 0.5em 1em;
-  text-align: left;
+  padding: 0.5em 0;
 }
 
 .exp_accomplishments > li {
   color: white;
   font-weight: bold;
-  margin: 0 0 0.5em 2em;
+  margin-bottom: 0.5em;
   padding: 0.25em;
 }
 
@@ -47,7 +46,7 @@ $company_name_offset: 2em;
 
 .exp_company_name {
   color: #ffb182;
-  font-size: $h4;
+  font-size: $h3;
   margin: 0;
 }
 
@@ -67,7 +66,6 @@ $company_name_offset: 2em;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
-  width: 100%;
 }
 
 .exp_item_container {
@@ -78,6 +76,7 @@ $company_name_offset: 2em;
 
 .exp_item_labels {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -95,7 +94,7 @@ $company_name_offset: 2em;
 
 .exp_table {
   margin: auto;
-  table-layout: fixed;
+  // table-layout: fixed;
   width: 90%;
 }
 
@@ -130,6 +129,51 @@ $company_name_offset: 2em;
 .exp_title {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 0.5em;
+}
+
+// Mobile styling
+@media only screen and (max-device-width: 800px) {
+  td {
+    display: none;
+  }
+
+  .exp_company_logo {
+    margin: 0 auto;
+  }
+
+  .exp_company_logo_left {
+    left: 0;
+    right: 0;
+  }
+
+  .exp_company_logo_right {
+    left: 0;
+    right: 0;
+  }
+
+  .exp_item_content {
+    background-color: #76767645;
+    border-radius: $rounded_corners;
+    margin-top: $logo_radius;
+  }
+
+  .exp_item {
+    padding: 0.5em 0;
+  }
+
+  .exp_item_container {
+    display: table-cell;
+    width: 100%;
+  }
+
+  #exp_role_hyphen {
+    display: none;
+  }
+
+  .exp_timeline {
+    display: none;
+  }
 }
