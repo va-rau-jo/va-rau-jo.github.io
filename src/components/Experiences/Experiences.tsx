@@ -1,8 +1,6 @@
 import './styles.scss';
 import data from '../../data/data.json';
 
-const TIMELINE_SCALE = 348;
-
 const getCell = (entry: any, i: number) => {
     const logos: {[index: string]:any} = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';

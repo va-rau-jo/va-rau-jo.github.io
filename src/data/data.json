@@ -67,134 +67,51 @@
   ],
   "projects": [
     {
-      "challenges": [
-        "One of the biggest challenges was dealing with the",
-        "Spotify API rate limits",
-        ". I had to account for failures when too many requests were made, and fetch data in batches."
-      ],
-      "contribution": "I was the sole contributor to this project.",
+      "back-end": "Node",
+      "contribution": "I was the sole contributor to this project, developing both the server and client",
       "deployed_icon": "heroku.png",
       "deployed_url": "https://spotify-trender.herokuapp.com/",
       "description": "A web app utilizing the Spotify API to track monthly playlists and improve playlist management",
-      "features": ["Does this", "and that of course"],
+      "features": [
+        "Users can view their Spotify playlists and songs",
+        "Songs can be compared across monthly playlists",
+        "Users can play the songs in their monthly playlists through the web app",
+        "Playlist manager allowing for easy combining of playlists"
+      ],
+      "front-end": "React",
       "name": "Trender",
       "sources": [
         "https://github.com/va-rau-jo/Trender",
         "https://github.com/va-rau-jo/Trender-Server"
       ],
       "technologies": [
-        "React",
-        "Node",
-        "APIs",
-        "Javascript",
-        "Promises",
-        "JSON"
+        { "icon": "react.png", "name": "React" },
+        { "icon": "node.png", "name": "Node" },
+        { "icon": "javascript.png", "name": "Javascript" },
+        { "icon": "spotify.png", "name": "Spotify API" }
       ],
       "year": "2021"
     },
     {
-      "challenges": [
-        "One of the biggest challenges was dealing with the",
-        "Spotify API rate limits",
-        ". I had to account for failures when too many requests were made, and fetch data in batches."
+      "contribution": "I was the sole contributor to this project, developing both the server and client",
+      "description": "A web app utilizing the Spotify API to track monthly playlists and improve playlist management",
+      "features": [
+        "Users can view their Spotify playlists and songs",
+        "Songs can be compared across monthly playlists",
+        "Users can play the songs in their monthly playlists through the web app",
+        "Playlist manager allowing for easy combining of playlists"
       ],
-      "contribution": "I was the sole contributor to this project.",
-      "deployed_icon": "heroku.png",
-      "deployed_url": "https://spotify-trender.herokuapp.com/",
-      "description": "App for bla bla bla",
-      "features": ["Does this", "and that of course"],
-      "name": "Trender2",
-      "sources": ["https://github.com/va-rau-jo/Trender"],
+      "front-end": "React",
+      "name": "Track My Internships",
+      "sources": ["https://github.com/bryanjlim/internship-tracker"],
       "technologies": [
-        "React",
-        "Node",
-        "APIs",
-        "Javascript",
-        "Promises",
-        "JSON"
+        { "icon": "react.png", "name": "React" },
+        { "icon": "gmail.png", "name": "Gmail API" },
+        { "icon": "gcp.png", "name": "Google Cloud Platform" },
+        { "icon": "firebase.png", "name": "Firebase" },
+        { "icon": "javascript.png", "name": "Javascript" }
       ],
-      "year": "2021"
-    },
-    {
-      "back-end": "Node",
-      "challenges": [
-        "One of the biggest challenges was dealing with the",
-        "Spotify API rate limits",
-        ". I had to account for failures when too many requests were made, and fetch data in batches."
-      ],
-      "contribution": "I was the sole contributor to this project.",
-      "deployed_url": "https://spotify-trender.herokuapp.com/",
-      "description": "App for bla bla bla",
-      "features": ["Does this", "and that of course"],
-      "front-end": "ReactJS",
-      "name": "Trender3",
-      "sources": [
-        "https://github.com/va-rau-jo/Trender",
-        "https://github.com/va-rau-jo/Trender-Server"
-      ],
-      "technologies": [
-        "React",
-        "Node",
-        "APIs",
-        "Javascript",
-        "Promises",
-        "JSON"
-      ],
-      "year": "2021"
-    },
-    {
-      "back-end": "Node",
-      "challenges": [
-        "One of the biggest challenges was dealing with the",
-        "Spotify API rate limits",
-        ". I had to account for failures when too many requests were made, and fetch data in batches."
-      ],
-      "contribution": "I was the sole contributor to this project.",
-      "deployed_url": "https://spotify-trender.herokuapp.com/",
-      "description": "App for bla bla bla",
-      "features": ["Does this", "and that of course"],
-      "front-end": "ReactJS",
-      "name": "Trender4",
-      "sources": [
-        "https://github.com/va-rau-jo/Trender",
-        "https://github.com/va-rau-jo/Trender-Server"
-      ],
-      "technologies": [
-        "React",
-        "Node",
-        "APIs",
-        "Javascript",
-        "Promises",
-        "JSON"
-      ],
-      "year": "2021"
-    },
-    {
-      "back-end": "Node",
-      "challenges": [
-        "One of the biggest challenges was dealing with the",
-        "Spotify API rate limits",
-        ". I had to account for failures when too many requests were made, and fetch data in batches."
-      ],
-      "contribution": "I was the sole contributor to this project.",
-      "deployed_url": "https://spotify-trender.herokuapp.com/",
-      "description": "App for bla bla bla",
-      "features": ["Does this", "and that of course"],
-      "front-end": "ReactJS",
-      "name": "Trender5",
-      "sources": [
-        "https://github.com/va-rau-jo/Trender",
-        "https://github.com/va-rau-jo/Trender-Server"
-      ],
-      "technologies": [
-        "React",
-        "Node",
-        "APIs",
-        "Javascript",
-        "Promises",
-        "JSON"
-      ],
-      "year": "2021"
+      "year": "2019"
     }
   ]
 }

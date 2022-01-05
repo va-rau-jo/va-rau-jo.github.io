@@ -12,8 +12,10 @@ $deployed_button_size: 2em;
 }
 
 .projects_deployed_div {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0.25em 0;
   width: $deployed_button_div_width;
 }
@@ -38,8 +40,36 @@ $deployed_button_size: 2em;
   padding: 0.25em 0;
 }
 
+.projects_description_container {
+  align-items: center;
+  display: flex;
+  height: 4.5em;
+}
+
+.projects_ends_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.5em;
+  width: 90%;
+}
+
+.projects_end {
+  font-size: $h5;
+  font-weight: bold;
+}
+
 .projects_feature_list {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  list-style-type: disc;
+  margin: 0;
+  padding: 1em 2em 1em 3em;
+}
+
+.projects_feature_text {
+  font-weight: bold;
 }
 
 .projects_header_div {
@@ -68,7 +98,9 @@ $deployed_button_size: 2em;
 
 // Area for details of project
 .projects_overlay {
-  background-color: #457fa9;
+  // TODO: pick color
+  background-color: #282828;
+  // background-color: #457fa9;
   border-radius: $border_radius_top;
   bottom: 0;
   color: white;
@@ -93,21 +125,59 @@ $deployed_button_size: 2em;
 
 .projects_overlay_grid {
   display: grid;
-  // 1fr = 1 fraction, so the 4 cells here
-  // all take up the same fraction of space
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a a a b b"
+    "a a a c c";
+  padding-top: 1em;
+}
+
+.projects_overlay_grid_cell_1 {
+  grid-area: a;
+}
+
+.projects_overlay_grid_cell_2 {
+  grid-area: b;
+}
+
+.projects_overlay_grid_cell_3 {
+  grid-area: c;
 }
 
 .projects_overlay_grid > div {
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .projects_overlay_icon {
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
+}
+
+.projects_overlay_title {
+  font-size: $h4;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+.projects_overlay_title_container {
+  align-items: center;
+  display: flex;
+  height: 2.5em;
+  justify-content: center;
+  width: 100%;
+}
+
+.projects_role_text {
+  font-size: $h7;
+  font-weight: bold;
+  line-height: $h5;
+  margin: auto;
+  padding: 0 8px;
+  text-align: center;
 }
 
 .projects_sources {
@@ -116,8 +186,57 @@ $deployed_button_size: 2em;
   width: 100%;
 }
 
+.projects_tech_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5em 1em 0.5em;
+}
+
+.projects_tech_list_icon {
+  height: $h2;
+  margin: 4px;
+  width: $h2;
+}
+
+.projects_tech_list_icon {
+  height: $h2;
+  margin: 4px;
+  width: $h2;
+}
+
+.projects_tech_list_item {
+  align-items: center;
+  border-radius: $rounded_corners;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+  position: relative;
+}
+
+.projects_tech_list_item:hover {
+  // TODO: fix color
+  background: #858585aa;
+}
+
+.projects_tech_list_item:hover span {
+  visibility: visible;
+}
+
+.projects_tech_list_text {
+  position: absolute;
+  bottom: -1.2em;
+  font-size: $h7;
+  font-weight: bold;
+  text-align: center;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
 .projects_title {
-  font-size: $h4;
+  font-size: $h3;
   font-weight: bold;
   margin-left: 16px;
   padding-top: 4px;
@@ -125,6 +244,7 @@ $deployed_button_size: 2em;
 
 .projects_try_icon {
   height: $deployed_button_size;
+  margin: 2px 0;
   width: $deployed_button_size;
 }
 
@@ -134,10 +254,10 @@ $deployed_button_size: 2em;
 
 .projects_try_icon:hover {
   background-color: #bbbbbb;
-  border-radius: 4px;
+  border-radius: $rounded_corners_subtle;
 }
 
 .projects_try_label {
-  font-size: 0.9em;
+  font-size: $h7;
   font-weight: bold;
 }
