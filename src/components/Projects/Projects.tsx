@@ -78,9 +78,9 @@ const Projects = () => {
                         <div className='projects_header_div'>
                             <div className='projects_desc_div'>
                                 <span className='projects_title'> {entry.name} </span>
-                                <div className='projects_description_container'>
+                                {/* <div className='projects_description_container'> */}
                                     <span className='projects_description'> {entry.description} </span>    
-                                </div>
+                                {/* </div> */}
                             </div>
                             <div className='projects_deployed_div'>
                                 {entry.deployed_url ? 

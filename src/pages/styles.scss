@@ -100,3 +100,13 @@ main {
   font-size: $h2;
   margin: 0.5em 0;
 }
+
+@media only screen and (max-device-width: 800px) {
+  .main_name {
+    margin: 0 auto;
+  }
+
+  .main_navbar {
+    margin: 0;
+  }
+}
