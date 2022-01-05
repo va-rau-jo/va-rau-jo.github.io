@@ -3,6 +3,7 @@
 $border_radius_top: $rounded_corners $rounded_corners 0 0;
 $deployed_button_div_width: 20%;
 $deployed_button_size: 2em;
+$overlay_bg_color: #282828;
 
 .projects_container {
   display: flex;
@@ -80,6 +81,17 @@ $deployed_button_size: 2em;
   position: relative;
 }
 
+.projects_hover_info {
+  background-color: $overlay_bg_color;
+  border-radius: $rounded_corners;
+  color: white;
+  font-weight: bold;
+  top: 5px;
+  position: absolute;
+  padding: 0.5em;
+  right: 5px;
+}
+
 .projects_img {
   border-radius: $border_radius_top;
   height: 100%;
@@ -99,7 +111,7 @@ $deployed_button_size: 2em;
 // Area for details of project
 .projects_overlay {
   // TODO: pick color
-  background-color: #282828;
+  background-color: $overlay_bg_color;
   // background-color: #457fa9;
   border-radius: $border_radius_top;
   bottom: 0;

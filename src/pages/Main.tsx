@@ -41,6 +41,22 @@ const scrollToProjects = () => {
   }
 };
 
+const scrollToTop = () => {
+  const element = document.querySelector('h1');
+  
+  if (element) {
+    scrollToElement(element); 
+  }
+}
+
+// Enable back to top button to only appear at bottom of page
+window.onscroll = () => { 
+  const section = document.getElementById('section3');
+  const button = document.getElementById('btt_btn');
+  if (!section || !button) return;
+  const visible = section.getBoundingClientRect().top <= window.innerHeight;
+  button.style.opacity = visible ? '1' : '0';
+}
 
 export default function Main() {
   return (
@@ -64,10 +80,13 @@ export default function Main() {
         </div>
       </main>
       <div className='main_divider' />
-      <section className='main_section3'>
+      <section id='section3' className='main_section3'>
         <p id='projects' className='main_section_title'> Projects </p>
-        <Projects />
+        <Projects/>
       </section>
+      <button id='btt_btn' className='main_btt_btn' onClick={scrollToTop}> 
+        <img src='icons/black/arrow.png' />
+      </button>
     </div>
   );
 }

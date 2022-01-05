@@ -7,6 +7,34 @@ main {
   text-align: center;
 }
 
+// Back to top button
+.main_btt_btn {
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  bottom: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: $h5;
+  opacity: 0;
+  padding: 0.25em;
+  position: fixed;
+  right: 16px;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.main_btt_btn:hover {
+  background-color: #aaaaaa;
+}
+
+.main_btt_btn > img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
 .main_divider {
   background-color: black;
   height: 0.5vh;
@@ -64,6 +92,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 3em;
 }
 
 .main_section_title {

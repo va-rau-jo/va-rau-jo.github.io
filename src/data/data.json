@@ -94,9 +94,9 @@
     },
     {
       "contribution": "I was the sole contributor to this project, developing both the server and client",
-      "description": "A web app utilizing the Spotify API to track monthly playlists and improve playlist management",
+      "description": "A web app that organizes recruiter emails to keep track of all your recruitment stages",
       "features": [
-        "Users can view their Spotify playlists and songs",
+        "Uses Gmail API to access emails and filters by email domains",
         "Songs can be compared across monthly playlists",
         "Users can play the songs in their monthly playlists through the web app",
         "Playlist manager allowing for easy combining of playlists"

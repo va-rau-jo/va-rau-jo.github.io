@@ -69,6 +69,9 @@ const Projects = () => {
                 return (
                     <div className='projects_item' key={i}>
                         <div className='projects_overlay_container'>
+                            <div className='projects_hover_info'>
+                                <span> Hover for details </span>
+                            </div> 
                             <img alt={entry.name} className='projects_img' src='images/trender.png' />
                             {generateOverlay(entry)}
                         </div>

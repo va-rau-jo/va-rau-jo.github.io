@@ -16,9 +16,6 @@ export default function Navbar(props: Props) {
     return (
         <ul className='navbar_navbar'>
             <li onClick={scrollToExperiences}>
-                <h5> Summary / Contact ??? </h5>
-            </li>
-            <li onClick={scrollToExperiences}>
                 <h5> Experiences </h5>
             </li>
             <li onClick={scrollToProjects}>
