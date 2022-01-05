@@ -54,12 +54,9 @@ const getCell = (entry: any, i: number) => {
 }
 
 const Experiences = () => {
-    const timelineHeight = TIMELINE_SCALE * data.experiences.length;
     return (
         <div className='exp_container'>
-            <div className='exp_timeline' id='timeline' 
-                style={{height: timelineHeight + 'px'}}>
-            </div>
+            <div className='exp_timeline' id='timeline' />
             <table className='exp_table' cellSpacing='0'>
                 <tbody>
                     {data.experiences.map((entry, i) => {
