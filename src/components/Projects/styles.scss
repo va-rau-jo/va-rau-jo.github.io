@@ -286,7 +286,15 @@ $overlay_bg_color: #282828;
     display: block;
   }
 
+  .projects_img {
+    object-fit: cover;
+  }
+
   .projects_item {
     width: 100%;
+  }
+
+  .projects_overlay_container {
+    height: 60vh;
   }
 }
