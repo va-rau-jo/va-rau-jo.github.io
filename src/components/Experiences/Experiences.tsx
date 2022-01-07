@@ -26,25 +26,25 @@ const getCell = (entry: any, i: number) => {
                         </div>
                     </div>
                     <div className='exp_item_labels'>
-                        {entry.team ? 
+                        {entry.team ?
                             <div className='exp_label_container'>
                                 <img alt="team" className='exp_label_icon' src='icons/white/team.png' />
                                 <span> {entry.team} </span>
-                            </div> : 
+                            </div> :
                             null }
                     </div>
                 </div>
                 <ul className='exp_accomplishments'>
-                    {entry.accomplishments.map((description: string, i: number) => (
+                    {entry.accomplishments.map((item: string, i: number) => (
                         <li key={i}>
-                            <span> {description} </span>
+                            <span> {item} </span>
                         </li>
                     ))}
                 </ul>
                 <ul className='exp_technologies'>
-                    {entry.technologies.map((description: string, i: number) => (
+                    {entry.technologies.map((item: string, i: number) => (
                         <li key={i}>
-                            <span> {description} </span>
+                            <span> {item} </span>
                         </li>
                     ))}
                 </ul>
@@ -71,7 +71,7 @@ const Experiences = () => {
                 </tbody>
             </table>
         </div>
-        
+
     );
 }
 

@@ -1,15 +1,9 @@
-import React from 'react';
 import './styles.scss';
 
 interface Props {
     scrollToExperiences: any,
     scrollToProjects: any,
 };
-
-const openResume = () => {
-    console.log("oPNEING");
-
-}
 
 export default function Navbar(props: Props) {
     const { scrollToExperiences, scrollToProjects } = props;
@@ -21,7 +15,7 @@ export default function Navbar(props: Props) {
             <li onClick={scrollToProjects}>
                 <h5> Projects </h5>
             </li>
-            <li onClick={openResume}>
+            <li>
                 <a className='navbar_anchor' href='resume.pdf' target='_blank'>
                   <h5> Resume </h5>
                 </a>

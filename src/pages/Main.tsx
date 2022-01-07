@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar/Navbar';
 import Projects from '../components/Projects/Projects';
 import './styles.scss';
 
+const PROJECT_DIV_ID = 'section3';
+const BACK_TO_TOP_BUTTON_ID = 'back_to_top_button';
+
 const scrollToElement = (element: HTMLElement) => {
   const startY = window.pageYOffset;
   const diff = element?.getBoundingClientRect().y - startY;
@@ -12,7 +15,7 @@ const scrollToElement = (element: HTMLElement) => {
 
   window.requestAnimationFrame(function step(timestamp) {
     if (!start) start = timestamp;
-    
+
     var time = timestamp - start;
     var percent = Math.min(time / duration_ms, 1);
     window.scrollTo(0, startY + diff * percent);
@@ -26,33 +29,33 @@ const scrollToElement = (element: HTMLElement) => {
 const scrollToExperiences = () => {
   console.log('SCROLLING E');
   const element = document.getElementById('experiences');
-  
+
   if (element) {
-    scrollToElement(element); 
+    scrollToElement(element);
   }
 };
 
 const scrollToProjects = () => {
   console.log('SCROLLING P');
   const element = document.getElementById('projects');
-  
+
   if (element) {
-    scrollToElement(element); 
+    scrollToElement(element);
   }
 };
 
 const scrollToTop = () => {
   const element = document.querySelector('h1');
-  
+
   if (element) {
-    scrollToElement(element); 
+    scrollToElement(element);
   }
 }
 
 // Enable back to top button to only appear at bottom of page
-window.onscroll = () => { 
-  const section = document.getElementById('section3');
-  const button = document.getElementById('btt_btn');
+window.onscroll = () => {
+  const section = document.getElementById(PROJECT_DIV_ID);
+  const button = document.getElementById(BACK_TO_TOP_BUTTON_ID);
   if (!section || !button) return;
   const visible = section.getBoundingClientRect().top <= window.innerHeight;
   button.style.opacity = visible ? '1' : '0';
@@ -65,7 +68,7 @@ export default function Main() {
         <div>
           <div className='main_header'>
               <h1 className='main_name'> Victor Araujo </h1>
-              <div className='main_navbar'> 
+              <div className='main_navbar'>
                 <Navbar scrollToExperiences={scrollToExperiences} scrollToProjects={scrollToProjects} />
               </div>
           </div>
@@ -80,12 +83,12 @@ export default function Main() {
         </div>
       </main>
       <div className='main_divider' />
-      <section id='section3' className='main_section3'>
+      <section id={PROJECT_DIV_ID} className='main_section3'>
         <p id='projects' className='main_section_title'> Projects </p>
         <Projects/>
       </section>
-      <button id='btt_btn' className='main_btt_btn' onClick={scrollToTop}> 
-        <img src='icons/black/arrow.png' />
+      <button id={BACK_TO_TOP_BUTTON_ID} className='main_btt_btn' onClick={scrollToTop}>
+        <img alt='up arrow' src='icons/black/arrow.png' />
       </button>
     </div>
   );
