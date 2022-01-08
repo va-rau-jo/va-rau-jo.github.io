@@ -1,9 +1,9 @@
 import './styles.scss';
 
 interface Props {
-    scrollToExperiences: any,
-    scrollToProjects: any,
-};
+    scrollToExperiences: any;
+    scrollToProjects: any;
+}
 
 export default function Navbar(props: Props) {
     const { scrollToExperiences, scrollToProjects } = props;
@@ -17,7 +17,7 @@ export default function Navbar(props: Props) {
             </li>
             <li>
                 <a className='navbar_anchor' href='resume.pdf' target='_blank'>
-                  <h5> Resume </h5>
+                    <h5> Resume </h5>
                 </a>
             </li>
         </ul>

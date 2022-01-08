@@ -11,14 +11,12 @@ $rounded_corners: 0.5em;
 $rounded_corners_subtle: 4px;
 
 body {
-  margin: auto;
-  font-family: "Helvetica", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: auto;
+    font-family: 'Helvetica', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

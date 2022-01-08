@@ -1,39 +1,39 @@
-@import "../../styles/global.scss";
+@import '../../styles/global.scss';
 
 .contact_icon {
-  height: $h2;
-  width: $h2;
+    height: $h2;
+    width: $h2;
 }
 
 .contact_item {
-  align-items: center;
-  border-radius: $rounded_corners;
-  cursor: pointer;
-  display: flex;
-  font-size: $h5;
-  flex-direction: column;
-  margin: 0 1em;
-  padding: 0.5em;
-  width: 4em;
+    align-items: center;
+    border-radius: $rounded_corners;
+    cursor: pointer;
+    display: flex;
+    font-size: $h5;
+    flex-direction: column;
+    margin: 0 1em;
+    padding: 0.5em;
+    width: 4em;
 }
 
 .contact_item:hover {
-  // TODO: better hover css
-  background-color: #555555;
+    // TODO: better hover css
+    background-color: #555555;
 }
 
 .contact_label {
-  font-size: $h6;
-  margin: 0.5em 0 0;
+    font-size: $h6;
+    margin: 0.5em 0 0;
 }
 
 .contact_list {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: center;
-  padding: 0;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
 }

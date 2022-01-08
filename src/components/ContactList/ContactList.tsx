@@ -17,6 +17,6 @@ const ContactList = () => {
             </li>
         </ul>
     );
-}
+};
 
 export default ContactList;

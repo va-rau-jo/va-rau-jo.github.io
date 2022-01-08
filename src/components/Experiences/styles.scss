@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import '../../styles/global.scss';
 
 // Radius of company logo image
 $logo_radius: 1.5em;
@@ -6,174 +6,174 @@ $logo_radius: 1.5em;
 $company_name_offset: 2em;
 
 .exp_accomplishments {
-  // background-color: #ebebeb;
-  border-radius: $rounded_corners;
-  list-style-type: none;
-  margin: 0 2em;
-  padding: 0.5em 0;
+    // background-color: #ebebeb;
+    border-radius: $rounded_corners;
+    list-style-type: none;
+    margin: 0 2em;
+    padding: 0.5em 0;
 }
 
 .exp_accomplishments > li {
-  color: white;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  padding: 0.25em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    padding: 0.25em;
 }
 
 .exp_company_logo {
-  // TODO: replace with better company logos
-  background-color: white;
-  border-radius: 50%;
-  height: $logo_radius * 2;
-  margin-top: 2em;
-  position: absolute;
-  top: 0;
-  width: $logo_radius * 2;
+    // TODO: replace with better company logos
+    background-color: white;
+    border-radius: 50%;
+    height: $logo_radius * 2;
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
+    width: $logo_radius * 2;
 }
 
 .exp_company_logo > img {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .exp_company_logo_left {
-  right: -$logo_radius;
+    right: -$logo_radius;
 }
 
 .exp_company_logo_right {
-  left: -$logo_radius;
+    left: -$logo_radius;
 }
 
 .exp_company_name {
-  color: #ffb182;
-  font-size: $h3;
-  margin: 0;
+    color: #ffb182;
+    font-size: $h3;
+    margin: 0;
 }
 
 // Main container for Experiences component
 .exp_container {
-  position: relative;
+    position: relative;
 }
 
 .exp_label_container {
-  align-items: center;
-  display: flex;
-  margin: 0 0 0 1em;
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 1em;
 }
 
 .exp_item {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em;
 }
 
 .exp_item_container {
-  padding: $company_name_offset 0;
-  position: relative;
-  width: 50%;
+    padding: $company_name_offset 0;
+    position: relative;
+    width: 50%;
 }
 
 .exp_item_labels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .exp_label_icon {
-  height: $h4;
-  margin-right: 0.25em;
-  width: $h4;
+    height: $h4;
+    margin-right: 0.25em;
+    width: $h4;
 }
 
 .exp_role {
-  font-size: $h5;
-  font-weight: bold;
-  margin: 0.1em 0 0 0.5em;
+    font-size: $h5;
+    font-weight: bold;
+    margin: 0.1em 0 0 0.5em;
 }
 
 .exp_table {
-  margin: auto;
-  // table-layout: fixed;
-  width: 90%;
+    margin: auto;
+    // table-layout: fixed;
+    width: 90%;
 }
 
 .exp_technologies {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-  margin: 0 2em;
-  padding: 0 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0 2em;
+    padding: 0 1em;
 }
 
 .exp_technologies > li {
-  background-color: #1264a5;
-  border-radius: $rounded_corners;
-  color: white;
-  font-weight: bold;
-  margin: 0 0.1em 1em 0;
-  padding: 0.5em 1em;
+    background-color: #1264a5;
+    border-radius: $rounded_corners;
+    color: white;
+    font-weight: bold;
+    margin: 0 0.1em 1em 0;
+    padding: 0.5em 1em;
 }
 
 .exp_timeline {
-  background-color: #d4af37;
-  height: 98%;
-  margin: auto;
-  left: 0;
-  position: absolute;
-  right: 0;
-  width: 3px;
+    background-color: #d4af37;
+    height: 98%;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 3px;
 }
 
 .exp_title {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5em;
 }
 
 // Mobile styling
 @media only screen and (max-device-width: 800px) {
-  td {
-    display: none;
-  }
+    td {
+        display: none;
+    }
 
-  .exp_company_logo {
-    margin: 0 auto;
-  }
+    .exp_company_logo {
+        margin: 0 auto;
+    }
 
-  .exp_company_logo_left {
-    left: 0;
-    right: 0;
-  }
+    .exp_company_logo_left {
+        left: 0;
+        right: 0;
+    }
 
-  .exp_company_logo_right {
-    left: 0;
-    right: 0;
-  }
+    .exp_company_logo_right {
+        left: 0;
+        right: 0;
+    }
 
-  .exp_item_content {
-    background-color: #76767645;
-    border-radius: $rounded_corners;
-    margin-top: $logo_radius;
-  }
+    .exp_item_content {
+        background-color: #76767645;
+        border-radius: $rounded_corners;
+        margin-top: $logo_radius;
+    }
 
-  .exp_item {
-    padding: 0.5em 0;
-  }
+    .exp_item {
+        padding: 0.5em 0;
+    }
 
-  .exp_item_container {
-    display: table-cell;
-    width: 100%;
-  }
+    .exp_item_container {
+        display: table-cell;
+        width: 100%;
+    }
 
-  #exp_role_hyphen {
-    display: none;
-  }
+    #exp_role_hyphen {
+        display: none;
+    }
 
-  .exp_timeline {
-    display: none;
-  }
+    .exp_timeline {
+        display: none;
+    }
 }

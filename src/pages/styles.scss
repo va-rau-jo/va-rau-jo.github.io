@@ -1,112 +1,112 @@
-@import "../styles/global.scss";
+@import '../styles/global.scss';
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 // Back to top button
 .main_btt_btn {
-  align-items: center;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  bottom: 16px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  font-size: $h5;
-  opacity: 0;
-  padding: 0.25em;
-  position: fixed;
-  right: 16px;
-  transition: 0.5s ease;
-  user-select: none;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    bottom: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: $h5;
+    opacity: 0;
+    padding: 0.25em;
+    position: fixed;
+    right: 16px;
+    transition: 0.5s ease;
+    user-select: none;
 }
 
 .main_btt_btn:hover {
-  background-color: #aaaaaa;
+    background-color: #aaaaaa;
 }
 
 .main_btt_btn > img {
-  height: 1.5em;
-  width: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
 }
 
 .main_divider {
-  background-color: black;
-  height: 0.5vh;
+    background-color: black;
+    height: 0.5vh;
 }
 
 .main_header {
-  align-items: center;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 8px;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
 }
 
 .main_name {
-  font-size: $h1;
-  font-weight: 400;
-  margin: 0 0 0 0.5em;
+    font-size: $h1;
+    font-weight: 400;
+    margin: 0 0 0 0.5em;
 }
 
 .main_navbar {
-  margin-right: 2em;
+    margin-right: 2em;
 }
 
 .main_section1 {
-  background-size: cover;
-  color: white;
-  height: 80vh;
+    background-size: cover;
+    color: white;
+    height: 80vh;
 }
 
 // Dims the background image
 .main_section1 > div {
-  background-color: #000000aa;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    background-color: #000000aa;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .main_section2 {
-  background-size: 100vw;
-  background-color: #bbbbbb;
-  color: white;
+    background-size: 100vw;
+    background-color: #bbbbbb;
+    color: white;
 }
 
 // Dims the background image
 .main_section2 > div {
-  background-color: #000000d6;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    background-color: #000000d6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .main_section3 {
-  align-items: center;
-  background-color: #1e74b1;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 3em;
+    align-items: center;
+    background-color: #1e74b1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3em;
 }
 
 .main_section_title {
-  font-size: $h2;
-  margin: 0.5em 0;
+    font-size: $h2;
+    margin: 0.5em 0;
 }
 
 @media only screen and (max-device-width: 800px) {
-  .main_name {
-    margin: 0 auto;
-  }
+    .main_name {
+        margin: 0 auto;
+    }
 
-  .main_navbar {
-    margin: auto;
-  }
+    .main_navbar {
+        margin: auto;
+    }
 }

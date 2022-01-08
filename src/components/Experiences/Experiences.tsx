@@ -2,12 +2,12 @@ import './styles.scss';
 import data from '../../data/data.json';
 
 const getCell = (entry: any, i: number) => {
-    const logos: {[index: string]:any} = data.logos;
+    const logos: { [index: string]: any } = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';
     return (
         <td className='exp_item_container'>
-            <div className={'exp_company_logo exp_company_logo' + side} >
-                <img alt="Company logo" src={logos[entry.company.toLowerCase()]} />
+            <div className={'exp_company_logo exp_company_logo' + side}>
+                <img alt='Company logo' src={logos[entry.company.toLowerCase()]} />
             </div>
             <div className='exp_item_content'>
                 <div className='exp_item'>
@@ -17,21 +17,39 @@ const getCell = (entry: any, i: number) => {
                     </div>
                     <div className='exp_item_labels'>
                         <div className='exp_label_container'>
-                            <img alt="date" className='exp_label_icon' src='icons/white/calendar.png' />
-                            <span> {entry.start_date} - {entry.end_date} </span>
+                            <img
+                                alt='date'
+                                className='exp_label_icon'
+                                src='icons/white/calendar.png'
+                            />
+                            <span>
+                                {' '}
+                                {entry.start_date} - {entry.end_date}{' '}
+                            </span>
                         </div>
                         <div className='exp_label_container'>
-                            <img alt="location" className='exp_label_icon' src='icons/white/marker.png' />
-                            <span> {entry.location} {entry.remote ? '(Remote)' : ''} </span>
+                            <img
+                                alt='location'
+                                className='exp_label_icon'
+                                src='icons/white/marker.png'
+                            />
+                            <span>
+                                {' '}
+                                {entry.location} {entry.remote ? '(Remote)' : ''}{' '}
+                            </span>
                         </div>
                     </div>
                     <div className='exp_item_labels'>
-                        {entry.team ?
+                        {entry.team ? (
                             <div className='exp_label_container'>
-                                <img alt="team" className='exp_label_icon' src='icons/white/team.png' />
+                                <img
+                                    alt='team'
+                                    className='exp_label_icon'
+                                    src='icons/white/team.png'
+                                />
                                 <span> {entry.team} </span>
-                            </div> :
-                            null }
+                            </div>
+                        ) : null}
                     </div>
                 </div>
                 <ul className='exp_accomplishments'>
@@ -51,7 +69,7 @@ const getCell = (entry: any, i: number) => {
             </div>
         </td>
     );
-}
+};
 
 const Experiences = () => {
     return (
@@ -71,8 +89,7 @@ const Experiences = () => {
                 </tbody>
             </table>
         </div>
-
     );
-}
+};
 
 export default Experiences;

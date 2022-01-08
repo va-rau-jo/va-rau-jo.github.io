@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import '../../styles/global.scss';
 
 $border_radius_top: $rounded_corners $rounded_corners 0 0;
 $deployed_button_div_width: 20%;
@@ -6,295 +6,296 @@ $deployed_button_size: 2em;
 $overlay_bg_color: #282828;
 
 .projects_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects_deployed_div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.25em 0;
-  width: $deployed_button_div_width;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25em 0;
+    width: $deployed_button_div_width;
 }
 
 .projects_deployed_1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_desc_div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100 - $deployed_button_div_width;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100 - $deployed_button_div_width;
 }
 
 .projects_description {
-  color: #444444;
-  font-size: $h6;
-  margin-left: 16px;
-  padding: 0.25em 0;
+    color: #444444;
+    font-size: $h6;
+    margin-left: 16px;
+    padding: 0.25em 0;
 }
 
 .projects_description_container {
-  align-items: center;
-  display: flex;
-  height: 4.5em;
+    align-items: center;
+    display: flex;
+    height: 4.5em;
 }
 
 .projects_ends_container {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 0.5em;
-  width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.5em;
+    width: 90%;
 }
 
 .projects_end {
-  font-size: $h5;
-  font-weight: bold;
+    font-size: $h5;
+    font-weight: bold;
 }
 
 .projects_feature_list {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-around;
-  list-style-type: disc;
-  margin: 0;
-  padding: 1em 2em 1em 3em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    list-style-type: disc;
+    margin: 0;
+    padding: 1em 2em 1em 3em;
 }
 
 .projects_feature_text {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .projects_header_div {
-  background-color: white;
-  border-radius: 0 0 $rounded_corners $rounded_corners;
-  box-shadow: 0px -5px 15px black;
-  display: flex;
-  position: relative;
+    background-color: white;
+    border-radius: 0 0 $rounded_corners $rounded_corners;
+    box-shadow: 0px -5px 15px black;
+    display: flex;
+    height: 7em;
+    position: relative;
 }
 
 .projects_hover_info {
-  background-color: $overlay_bg_color;
-  border-radius: $rounded_corners;
-  color: white;
-  font-weight: bold;
-  top: 5px;
-  position: absolute;
-  padding: 0.5em;
-  right: 5px;
+    background-color: $overlay_bg_color;
+    border-radius: $rounded_corners;
+    color: white;
+    font-weight: bold;
+    top: 5px;
+    position: absolute;
+    padding: 0.5em;
+    right: 5px;
 }
 
 .projects_hover_info_tap {
-  display: none;
+    display: none;
 }
 
 .projects_img {
-  border-radius: $border_radius_top;
-  height: 100%;
-  width: 100%;
+    border-radius: $border_radius_top;
+    height: 100%;
+    width: 100%;
 }
 
 .projects_item {
-  border: 2px solid black;
-  border-radius: $rounded_corners;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  width: 45%;
+    border: 2px solid black;
+    border-radius: $rounded_corners;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 45%;
 }
 
 // Area for details of project
 .projects_overlay {
-  background-color: $overlay_bg_color;
-  border-radius: $border_radius_top;
-  bottom: 0;
-  color: white;
-  justify-content: center;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.5s ease;
+    background-color: $overlay_bg_color;
+    border-radius: $border_radius_top;
+    bottom: 0;
+    color: white;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease;
 }
 
 // Container holding image and overlay
 .projects_overlay_container {
-  position: relative;
+    position: relative;
 }
 
 // On hover -> display overlay
 .projects_overlay_container:hover .projects_overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .projects_overlay_grid {
-  display: grid;
-  grid-template-areas:
-    "a a a b b"
-    "a a a c c";
-  padding-top: 1em;
+    display: grid;
+    grid-template-areas:
+        'a a a b b'
+        'a a a c c';
+    padding-top: 1em;
 }
 
 .projects_overlay_grid_cell_1 {
-  grid-area: a;
+    grid-area: a;
 }
 
 .projects_overlay_grid_cell_2 {
-  grid-area: b;
+    grid-area: b;
 }
 
 .projects_overlay_grid_cell_3 {
-  grid-area: c;
+    grid-area: c;
 }
 
 .projects_overlay_grid > div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  min-height: 0;
-  overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .projects_overlay_icon {
-  height: 2em;
-  width: 2em;
+    height: 2em;
+    width: 2em;
 }
 
 .projects_overlay_title {
-  font-size: $h4;
-  font-weight: bold;
-  margin: 0 0.5em;
+    font-size: $h4;
+    font-weight: bold;
+    margin: 0 0.5em;
 }
 
 .projects_overlay_title_container {
-  align-items: center;
-  display: flex;
-  height: 2.5em;
-  justify-content: center;
-  width: 100%;
+    align-items: center;
+    display: flex;
+    height: 2.5em;
+    justify-content: center;
+    width: 100%;
 }
 
 .projects_role_text {
-  font-size: $h7;
-  font-weight: bold;
-  line-height: $h5;
-  margin: auto;
-  padding: 0 8px;
-  text-align: center;
+    font-size: $h7;
+    font-weight: bold;
+    line-height: $h5;
+    margin: auto;
+    padding: 0 8px;
+    text-align: center;
 }
 
 .projects_sources {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .projects_tech_list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0.5em 1em 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.5em 1em 0.5em;
 }
 
 .projects_tech_list_icon {
-  height: $h2;
-  margin: 4px;
-  width: $h2;
+    height: $h2;
+    margin: 4px;
+    width: $h2;
 }
 
 .projects_tech_list_icon {
-  height: $h2;
-  margin: 4px;
-  width: $h2;
+    height: $h2;
+    margin: 4px;
+    width: $h2;
 }
 
 .projects_tech_list_item {
-  align-items: center;
-  border-radius: $rounded_corners;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.8em;
-  position: relative;
+    align-items: center;
+    border-radius: $rounded_corners;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    position: relative;
 }
 
 .projects_tech_list_item:hover {
-  // TODO: fix color
-  background: #858585aa;
+    // TODO: fix color
+    background: #858585aa;
 }
 
 .projects_tech_list_item:hover span {
-  visibility: visible;
+    visibility: visible;
 }
 
 .projects_tech_list_text {
-  position: absolute;
-  bottom: -1.2em;
-  font-size: $h7;
-  font-weight: bold;
-  text-align: center;
-  visibility: hidden;
-  white-space: nowrap;
+    position: absolute;
+    bottom: -1.2em;
+    font-size: $h7;
+    font-weight: bold;
+    text-align: center;
+    visibility: hidden;
+    white-space: nowrap;
 }
 
 .projects_title {
-  font-size: $h3;
-  font-weight: bold;
-  margin-left: 16px;
-  padding-top: 4px;
-  text-align: center;
+    font-size: $h3;
+    font-weight: bold;
+    margin-left: 16px;
+    padding-top: 4px;
+    text-align: center;
 }
 
 .projects_try_icon {
-  height: $deployed_button_size;
-  margin: 2px 0;
-  width: $deployed_button_size;
+    height: $deployed_button_size;
+    margin: 2px 0;
+    width: $deployed_button_size;
 }
 
 .projects_try_icon > img {
-  width: 100%;
+    width: 100%;
 }
 
 .projects_try_icon:hover {
-  background-color: #bbbbbb;
-  border-radius: $rounded_corners_subtle;
+    background-color: #bbbbbb;
+    border-radius: $rounded_corners_subtle;
 }
 
 .projects_try_label {
-  font-size: $h7;
-  font-weight: bold;
-  text-align: center;
+    font-size: $h7;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media only screen and (max-device-width: 800px) {
-  .projects_hover_info_hover {
-    display: none;
-  }
+    .projects_hover_info_hover {
+        display: none;
+    }
 
-  .projects_hover_info_tap {
-    display: block;
-  }
+    .projects_hover_info_tap {
+        display: block;
+    }
 
-  .projects_img {
-    object-fit: cover;
-  }
+    .projects_img {
+        object-fit: cover;
+    }
 
-  .projects_item {
-    width: 100%;
-  }
+    .projects_item {
+        width: 100%;
+    }
 
-  .projects_overlay_container {
-    height: 60vh;
-  }
+    .projects_overlay_container {
+        height: 60vh;
+    }
 }
