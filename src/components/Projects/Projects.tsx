@@ -16,7 +16,7 @@ const generateOverlay = (entry: any) => {
                 <div className='projects_ends_container'>
                     {entry['front-end'] ? (
                         <div>
-                            <span> Front-end: </span>
+                            <span className='proejcts_end_label'> Front-end: </span>
                             <span className='projects_end'>{entry['front-end']}</span>
                         </div>
                     ) : null}
@@ -30,7 +30,7 @@ const generateOverlay = (entry: any) => {
                 <ul className='projects_feature_list'>
                     {entry.features.map((feature: string, i: number) => (
                         <li key={i}>
-                            <span className='projects_feature_text'> {feature} </span>
+                            <span> {feature} </span>
                         </li>
                     ))}
                 </ul>
@@ -92,12 +92,7 @@ const Projects = () => {
                         <div className='projects_header_div'>
                             <div className='projects_desc_div'>
                                 <span className='projects_title'> {entry.name} </span>
-                                <div>
-                                    <span className='projects_description'>
-                                        {' '}
-                                        {entry.description}{' '}
-                                    </span>
-                                </div>
+                                <p className='projects_description'>{entry.description}</p>
                             </div>
                             <div className='projects_deployed_div'>
                                 {entry.deployed_url ? (

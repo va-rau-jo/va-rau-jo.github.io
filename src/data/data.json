@@ -104,7 +104,10 @@
                 { "icon": "gmail.png", "name": "Gmail API" },
                 { "icon": "gcp.png", "name": "Google Cloud Platform" },
                 { "icon": "firebase.png", "name": "Firebase" },
-                { "icon": "javascript.png", "name": "Javascript" }
+                {
+                    "icon": "javascript.png",
+                    "name": "Javascript"
+                }
             ],
             "year": "2019"
         }

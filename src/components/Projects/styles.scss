@@ -1,7 +1,6 @@
 @import '../../styles/global.scss';
 
 $border_radius_top: $rounded_corners $rounded_corners 0 0;
-$deployed_button_div_width: 20%;
 $deployed_button_size: 2em;
 $overlay_bg_color: #282828;
 
@@ -17,7 +16,7 @@ $overlay_bg_color: #282828;
     flex-direction: column;
     justify-content: center;
     padding: 0.25em 0;
-    width: $deployed_button_div_width;
+    width: 9em;
 }
 
 .projects_deployed_1 {
@@ -30,20 +29,13 @@ $overlay_bg_color: #282828;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100 - $deployed_button_div_width;
 }
 
 .projects_description {
     color: #444444;
     font-size: $h6;
-    margin-left: 16px;
+    margin: auto 0 auto 16px;
     padding: 0.25em 0;
-}
-
-.projects_description_container {
-    align-items: center;
-    display: flex;
-    height: 4.5em;
 }
 
 .projects_ends_container {
@@ -61,6 +53,7 @@ $overlay_bg_color: #282828;
 .projects_feature_list {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
     flex-grow: 1;
     justify-content: space-around;
     list-style-type: disc;
@@ -68,16 +61,12 @@ $overlay_bg_color: #282828;
     padding: 1em 2em 1em 3em;
 }
 
-.projects_feature_text {
-    font-weight: bold;
-}
-
 .projects_header_div {
     background-color: white;
     border-radius: 0 0 $rounded_corners $rounded_corners;
     box-shadow: 0px -5px 15px black;
     display: flex;
-    height: 7em;
+    height: 8em;
     position: relative;
 }
 
@@ -109,7 +98,8 @@ $overlay_bg_color: #282828;
     display: flex;
     flex-direction: column;
     margin: 1em;
-    width: 45%;
+    max-width: 45%;
+    min-width: 600px;
 }
 
 // Area for details of project
@@ -163,7 +153,6 @@ $overlay_bg_color: #282828;
     flex-direction: column;
     min-width: 0;
     min-height: 0;
-    overflow: hidden;
 }
 
 .projects_overlay_icon {
@@ -205,8 +194,8 @@ $overlay_bg_color: #282828;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
-    margin: 0;
-    padding: 0 0.5em 1em 0.5em;
+    margin: auto;
+    padding: 0 1.5em 1em 1.5em;
 }
 
 .projects_tech_list_icon {
@@ -231,7 +220,7 @@ $overlay_bg_color: #282828;
 }
 
 .projects_tech_list_item:hover {
-    // TODO: fix color
+    // TODO: fix color / more interesting hover perhaps
     background: #858585aa;
 }
 
@@ -252,8 +241,7 @@ $overlay_bg_color: #282828;
 .projects_title {
     font-size: $h3;
     font-weight: bold;
-    margin-left: 16px;
-    padding-top: 4px;
+    padding: 4px 0;
     text-align: center;
 }
 
@@ -279,6 +267,15 @@ $overlay_bg_color: #282828;
 }
 
 @media only screen and (max-device-width: 800px) {
+    .projects_ends_container > div {
+        text-align: center;
+    }
+
+    .projects_feature_list {
+        font-size: 4vw;
+        padding: 1em 1em 1em 1.5em;
+    }
+
     .projects_hover_info_hover {
         display: none;
     }
@@ -292,10 +289,36 @@ $overlay_bg_color: #282828;
     }
 
     .projects_item {
-        width: 100%;
+        max-width: 100%;
+        min-width: 0;
     }
 
     .projects_overlay_container {
         height: 60vh;
+    }
+
+    .projects_overlay_icon {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .projects_overlay_title {
+        font-size: 4.5vw;
+    }
+
+    .projects_overlay_title_container {
+        height: auto;
+    }
+
+    .projects_role_text {
+        padding: 0;
+    }
+
+    .projects_tech_list {
+        padding: 0;
+    }
+
+    .projects_title {
+        font-size: 6vw;
     }
 }
