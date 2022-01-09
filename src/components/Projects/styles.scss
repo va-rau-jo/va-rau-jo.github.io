@@ -29,6 +29,7 @@ $overlay_bg_color: #282828;
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .projects_description {

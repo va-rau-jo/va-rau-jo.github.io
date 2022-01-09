@@ -58,10 +58,10 @@ const getCell = (entry: any, i: number) => {
                             <span> {item} </span>
                         </li>
                     ))}
-                </ul>
-                <div className='exp_tech_border_div'></div>
-                <p className='exp_tech_title'> Technologies </p>
 
+                    <div className='exp_tech_border_div'></div>
+                </ul>
+                <p className='exp_tech_title'> Technologies </p>
                 <ul className='exp_tech_list'>
                     {entry.technologies.map((tech: any, i: number) => (
                         <li className='exp_tech_list_item' key={i}>
