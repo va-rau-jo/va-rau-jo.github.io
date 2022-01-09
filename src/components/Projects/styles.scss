@@ -204,12 +204,6 @@ $overlay_bg_color: #282828;
     width: $h2;
 }
 
-.projects_tech_list_icon {
-    height: $h2;
-    margin: 4px;
-    width: $h2;
-}
-
 .projects_tech_list_item {
     align-items: center;
     border-radius: $rounded_corners;
@@ -230,7 +224,7 @@ $overlay_bg_color: #282828;
 
 .projects_tech_list_text {
     position: absolute;
-    bottom: -1.2em;
+    bottom: -$h5;
     font-size: $h7;
     font-weight: bold;
     text-align: center;

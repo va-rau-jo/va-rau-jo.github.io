@@ -16,7 +16,11 @@
             "role": "Software Engineering Intern",
             "start_date": "August 2021",
             "team": "Small Business Products",
-            "technologies": ["React", "Hack", "End to end testing"]
+            "technologies": [
+                { "icon": "react.png", "name": "React" },
+                { "icon": "hack.png", "name": "Hack" },
+                { "icon": "testing.png", "name": "End-to-end testing" }
+            ]
         },
         {
             "accomplishments": [
@@ -30,7 +34,12 @@
             "role": "Software Engineering Intern",
             "start_date": "June 2021",
             "team": "Meet Reliability",
-            "technologies": ["Javascript", "Java", "Mock testing", "Dependency Injection"]
+            "technologies": [
+                { "icon": "javascript.png", "name": "Javascript" },
+                { "icon": "java.png", "name": "Java" },
+                { "icon": "testing.png", "name": "Mock testing" },
+                { "icon": "dependency_injection.png", "name": "Dependency Injection" }
+            ]
         },
         {
             "accomplishments": [
@@ -44,7 +53,10 @@
             "role": "Software Engineering Intern",
             "start_date": "June 2020",
             "team": "Localization",
-            "technologies": ["React", "Hack", "Front-end"]
+            "technologies": [
+                { "icon": "react.png", "name": "React" },
+                { "icon": "hack.png", "name": "Hack" }
+            ]
         },
         {
             "accomplishments": [
@@ -57,7 +69,11 @@
             "remote": false,
             "role": "Facebook University Intern",
             "start_date": "June 2019",
-            "technologies": ["Android", "Mobile", "Heroku"]
+            "technologies": [
+                { "icon": "android.png", "name": "Android" },
+                { "icon": "java.png", "name": "Java" },
+                { "icon": "heroku.png", "name": "Heroku" }
+            ]
         }
     ],
     "projects": [
@@ -104,10 +120,7 @@
                 { "icon": "gmail.png", "name": "Gmail API" },
                 { "icon": "gcp.png", "name": "Google Cloud Platform" },
                 { "icon": "firebase.png", "name": "Firebase" },
-                {
-                    "icon": "javascript.png",
-                    "name": "Javascript"
-                }
+                { "icon": "javascript.png", "name": "Javascript" }
             ],
             "year": "2019"
         }

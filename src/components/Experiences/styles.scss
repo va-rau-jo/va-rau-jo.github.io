@@ -1,9 +1,10 @@
 @import '../../styles/global.scss';
 
-// Radius of company logo image
-$logo_radius: 1.5em;
+$company_name_color: #ffb182;
 // Offset to line up company name and logo
 $company_name_offset: 2em;
+// Radius of company logo image
+$logo_radius: 1.5em;
 
 .exp_accomplishments {
     // background-color: #ebebeb;
@@ -45,7 +46,7 @@ $company_name_offset: 2em;
 }
 
 .exp_company_name {
-    color: #ffb182;
+    color: $company_name_color;
     font-size: $h3;
     margin: 0;
 }
@@ -98,22 +99,61 @@ $company_name_offset: 2em;
     width: 90%;
 }
 
-.exp_technologies {
+.exp_tech_border_div {
+    background: $company_name_color;
+    height: 2px;
+    margin: auto;
+    width: 75%;
+}
+
+.exp_tech_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style-type: none;
-    margin: 0 2em;
+    margin: 0 auto;
     padding: 0 1em;
+    width: 50%;
 }
 
-.exp_technologies > li {
-    background-color: #1264a5;
+.exp_tech_list_icon {
+    height: $h1;
+    margin: 4px;
+    width: $h1;
+}
+
+.exp_tech_list_item {
+    align-items: center;
     border-radius: $rounded_corners;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    position: relative;
+}
+
+.exp_tech_list_item:hover {
+    // TODO: fix color / more interesting hover perhaps
+    background: #858585aa;
+}
+
+.exp_tech_list_item:hover span {
+    visibility: visible;
+}
+
+.exp_tech_list_text {
+    position: absolute;
+    bottom: -$h5;
+    font-size: $h6;
     font-weight: bold;
-    margin: 0 0.1em 1em 0;
-    padding: 0.5em 1em;
+    text-align: center;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.exp_tech_title {
+    font-size: $h5;
+    font-weight: bold;
+    margin: 0.5em 0;
 }
 
 .exp_timeline {
