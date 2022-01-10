@@ -46,6 +46,10 @@ $overlay_bg_color: #282828;
     width: 90%;
 }
 
+.projects_ends_container > div {
+    padding: 0.5em 4px 0 4px;
+}
+
 .projects_end {
     font-size: $h5;
     font-weight: bold;
@@ -54,7 +58,6 @@ $overlay_bg_color: #282828;
 .projects_feature_list {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
     flex-grow: 1;
     justify-content: space-around;
     list-style-type: disc;
@@ -111,7 +114,7 @@ $overlay_bg_color: #282828;
     color: white;
     justify-content: center;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     right: 0;
     top: 0;
@@ -177,7 +180,6 @@ $overlay_bg_color: #282828;
 
 .projects_role_text {
     font-size: $h7;
-    font-weight: bold;
     line-height: $h5;
     margin: auto;
     padding: 0 8px;
@@ -191,7 +193,9 @@ $overlay_bg_color: #282828;
 }
 
 .projects_tech_list {
+    align-items: center;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
@@ -210,6 +214,7 @@ $overlay_bg_color: #282828;
     border-radius: $rounded_corners;
     display: flex;
     flex-direction: column;
+    height: fit-content;
     margin-bottom: 0.8em;
     position: relative;
 }
@@ -224,11 +229,11 @@ $overlay_bg_color: #282828;
 }
 
 .projects_tech_list_text {
-    position: absolute;
-    bottom: -$h5;
     font-size: $h7;
     font-weight: bold;
+    position: absolute;
     text-align: center;
+    top: 100%;
     visibility: hidden;
     white-space: nowrap;
 }
@@ -266,8 +271,12 @@ $overlay_bg_color: #282828;
         text-align: center;
     }
 
-    .projects_feature_list {
+    .projects_end {
         font-size: 4vw;
+    }
+
+    .projects_feature_list {
+        font-size: 3.5vw;
         padding: 1em 1em 1em 1.5em;
     }
 
@@ -311,6 +320,11 @@ $overlay_bg_color: #282828;
 
     .projects_tech_list {
         padding: 0;
+    }
+
+    .projects_tech_list_text {
+        white-space: inherit;
+        z-index: 1;
     }
 
     .projects_title {
