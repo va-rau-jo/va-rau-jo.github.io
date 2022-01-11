@@ -3,18 +3,18 @@ import './styles.scss';
 const ContactList = () => {
     return (
         <ul className='contact_list'>
-            <li className='contact_item'>
+            <a className='contact_item' href='mailto:v.jobs@lunenetworks.com'>
                 <img alt='email' className='contact_icon' src='icons/white/email.png' />
                 <h6 className='contact_label'> Email </h6>
-            </li>
-            <li className='contact_item'>
+            </a>
+            <a className='contact_item' href='https://www.linkedin.com/in/v-araujo/'>
                 <img alt='linkedin' className='contact_icon' src='icons/white/linkedin.png' />
                 <h6 className='contact_label'> LinkedIn </h6>
-            </li>
-            <li className='contact_item'>
+            </a>
+            <a className='contact_item' href='https://github.com/va-rau-jo'>
                 <img alt='github' className='contact_icon' src='icons/white/github.png' />
                 <h6 className='contact_label'> GitHub </h6>
-            </li>
+            </a>
         </ul>
     );
 };

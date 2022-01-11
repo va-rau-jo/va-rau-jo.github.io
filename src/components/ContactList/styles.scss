@@ -1,8 +1,29 @@
 @import '../../styles/global.scss';
 
+@keyframes bobbing-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .contact_icon {
     height: $h2;
     width: $h2;
+}
+
+.contact_icon:hover,
+.contact_icon:focus,
+.contact_icon:active {
+    animation-name: bobbing-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .contact_item {
@@ -17,9 +38,10 @@
     width: 4em;
 }
 
-.contact_item:hover {
-    // TODO: better hover css
-    background-color: #555555;
+.contact_item:hover,
+.contact_item:focus,
+.contact_item:active {
+    background-color: #858585aa;
 }
 
 .contact_label {
