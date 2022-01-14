@@ -1,17 +1,3 @@
-@import '../../styles/global.scss';
-
-@keyframes bobbing-animation {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(8px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 .contact_icon {
     height: $h2;
     width: $h2;
@@ -20,8 +6,8 @@
 .contact_icon:hover,
 .contact_icon:focus,
 .contact_icon:active {
-    animation-name: bobbing-animation;
-    animation-duration: 2s;
+    animation-name: animation-bob-down;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }

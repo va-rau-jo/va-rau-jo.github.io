@@ -1,5 +1,3 @@
-import './styles.scss';
-
 const ContactList = () => {
     return (
         <ul className='contact_list'>

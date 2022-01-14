@@ -1,8 +1,7 @@
-import ContactList from '../components/ContactList/ContactList';
-import Experiences from '../components/Experiences/Experiences';
-import Navbar from '../components/Navbar/Navbar';
-import Projects from '../components/Projects/Projects';
-import './styles.scss';
+import ContactList from './components/ContactList';
+import Experiences from './components/Experiences';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 
 const PROJECT_DIV_ID = 'section3';
 const BACK_TO_TOP_BUTTON_ID = 'back_to_top_button';

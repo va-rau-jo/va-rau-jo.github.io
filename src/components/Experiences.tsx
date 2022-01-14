@@ -1,12 +1,11 @@
-import './styles.scss';
-import data from '../../data/data.json';
+import data from '../data/data.json';
 
 const getCell = (entry: any, i: number) => {
     const logos: { [index: string]: any } = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';
     return (
         <td className='exp_item_container'>
-            <div className={'exp_company_logo exp_company_logo' + side}>
+            <div className={'exp_company_logo exp_company_logo' + side + ' hvr-bubble-float-right'}>
                 <img alt='Company logo' src={logos[entry.company.toLowerCase()]} />
             </div>
             <div className='exp_item_content'>

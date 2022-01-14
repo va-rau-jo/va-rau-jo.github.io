@@ -13,3 +13,10 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@import './styles/globals';
+@import './styles/contactlist';
+@import './styles/experiences';
+@import './styles/navbar';
+@import './styles/projects';
+@import './styles/main';

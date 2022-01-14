@@ -1,5 +1,4 @@
-import './styles.scss';
-import data from '../../data/data.json';
+import data from '../data/data.json';
 
 const generateOverlay = (entry: any) => {
     return (
@@ -16,13 +15,13 @@ const generateOverlay = (entry: any) => {
                 <div className='projects_ends_container'>
                     {entry['front-end'] ? (
                         <div>
-                            <span className='proejcts_end_label'> Front-end: </span>
+                            <span className='projects_end_label'> Front-end: </span>
                             <span className='projects_end'>{entry['front-end']}</span>
                         </div>
                     ) : null}
                     {entry['back-end'] ? (
                         <div>
-                            <span> Back-end: </span>
+                            <span className='projects_end_label'> Back-end: </span>
                             <span className='projects_end'>{entry['back-end']}</span>
                         </div>
                     ) : null}
@@ -82,10 +81,11 @@ const Projects = () => {
                                 </span>
                                 <span className='projects_hover_info_tap'> Tap for details </span>
                             </div>
+                            {/* Image must have exactly a 2:1 width/height ratio */}
                             <img
                                 alt={entry.name}
                                 className='projects_img'
-                                src='images/trender.png'
+                                src={'images/' + entry.image}
                             />
                             {generateOverlay(entry)}
                         </div>

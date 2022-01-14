@@ -1,8 +1,7 @@
-@import '../../styles/global.scss';
-
 $border_radius_top: $rounded_corners $rounded_corners 0 0;
 $deployed_button_size: 2em;
 $overlay_bg_color: #282828;
+$overlay_font_size: 1vw;
 
 .projects_container {
     display: flex;
@@ -34,7 +33,7 @@ $overlay_bg_color: #282828;
 
 .projects_description {
     color: #444444;
-    font-size: $h6;
+    font-size: 1.1vw;
     margin: auto 0 auto 16px;
     padding: 0.25em 0;
 }
@@ -51,12 +50,17 @@ $overlay_bg_color: #282828;
 }
 
 .projects_end {
-    font-size: $h5;
+    font-size: 1.2vw;
     font-weight: bold;
+}
+
+.projects_end_label {
+    font-size: $overlay_font_size;
 }
 
 .projects_feature_list {
     display: flex;
+    font-size: $overlay_font_size;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-around;
@@ -123,6 +127,7 @@ $overlay_bg_color: #282828;
 
 // Container holding image and overlay
 .projects_overlay_container {
+    flex-grow: 1;
     position: relative;
 }
 
@@ -179,7 +184,7 @@ $overlay_bg_color: #282828;
 }
 
 .projects_role_text {
-    font-size: $h7;
+    font-size: $overlay_font_size;
     line-height: $h5;
     margin: auto;
     padding: 0 8px;
@@ -204,9 +209,9 @@ $overlay_bg_color: #282828;
 }
 
 .projects_tech_list_icon {
-    height: $h2;
+    height: 3vw;
     margin: 4px;
-    width: $h2;
+    width: 3vw;
 }
 
 .projects_tech_list_item {
@@ -229,17 +234,16 @@ $overlay_bg_color: #282828;
 }
 
 .projects_tech_list_text {
-    font-size: $h7;
-    font-weight: bold;
+    font-size: 1vw;
     position: absolute;
     text-align: center;
-    top: 100%;
+    top: 110%;
     visibility: hidden;
     white-space: nowrap;
 }
 
 .projects_title {
-    font-size: $h3;
+    font-size: 1.75vw;
     font-weight: bold;
     padding: 4px 0;
     text-align: center;
@@ -267,6 +271,12 @@ $overlay_bg_color: #282828;
 }
 
 @media only screen and (max-device-width: 800px) {
+    $overlay_font_size: 3.5vw;
+
+    .projects_description {
+        font-size: $h6;
+    }
+
     .projects_ends_container > div {
         text-align: center;
     }
@@ -275,8 +285,12 @@ $overlay_bg_color: #282828;
         font-size: 4vw;
     }
 
+    .projects_end_label {
+        font-size: $overlay_font_size;
+    }
+
     .projects_feature_list {
-        font-size: 3.5vw;
+        font-size: $overlay_font_size;
         padding: 1em 1em 1em 1.5em;
     }
 
@@ -298,7 +312,7 @@ $overlay_bg_color: #282828;
     }
 
     .projects_overlay_container {
-        height: 60vh;
+        height: 50vh;
     }
 
     .projects_overlay_icon {
@@ -315,6 +329,7 @@ $overlay_bg_color: #282828;
     }
 
     .projects_role_text {
+        font-size: $overlay_font_size;
         padding: 0;
     }
 
@@ -322,7 +337,13 @@ $overlay_bg_color: #282828;
         padding: 0;
     }
 
+    .projects_tech_list_icon {
+        height: 8vw;
+        width: 8vw;
+    }
+
     .projects_tech_list_text {
+        font-size: $h7;
         white-space: inherit;
         z-index: 1;
     }

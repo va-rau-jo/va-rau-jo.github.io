@@ -90,6 +90,7 @@
                 "Playlist manager allowing for easy combining of playlists"
             ],
             "front-end": "React",
+            "image": "trender.png",
             "name": "Trender",
             "sources": [
                 "https://github.com/va-rau-jo/Trender",
@@ -113,6 +114,7 @@
                 "Playlist manager allowing for easy combining of playlists"
             ],
             "front-end": "React",
+            "image": "tmi.png",
             "name": "Track My Internships",
             "sources": ["https://github.com/bryanjlim/internship-tracker"],
             "technologies": [

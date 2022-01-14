@@ -1,5 +1,3 @@
-@import '../../styles/global.scss';
-
 .navbar_anchor {
     color: white;
     text-decoration: none;
@@ -13,13 +11,22 @@
     padding: 0;
 }
 
-.navbar_navbar > li {
+.navbar_item {
     cursor: pointer;
     font-size: $h4;
     margin: 0 0.5em 0.5em 0.5em;
     padding: 0;
 }
 
-.navbar_navbar > li h5 {
+.navbar_item:hover,
+.navbar_item:focus,
+.navbar_item:active {
+    animation-name: animation-bob-up;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.navbar_item h5 {
     margin: 0;
 }
