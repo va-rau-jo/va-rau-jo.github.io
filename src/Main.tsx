@@ -6,48 +6,25 @@ import Projects from './components/Projects';
 const PROJECT_DIV_ID = 'section3';
 const BACK_TO_TOP_BUTTON_ID = 'back_to_top_button';
 
-const scrollToElement = (element: HTMLElement) => {
-    const startY = window.pageYOffset;
-    const diff = element?.getBoundingClientRect().y - startY;
-    const duration_ms = 1000;
-    var start: number;
-
-    window.requestAnimationFrame(function step(timestamp) {
-        if (!start) start = timestamp;
-
-        var time = timestamp - start;
-        var percent = Math.min(time / duration_ms, 1);
-        window.scrollTo(0, startY + diff * percent);
-
-        if (time < duration_ms) {
-            window.requestAnimationFrame(step);
-        }
-    });
-};
-
-const scrollToExperiences = () => {
-    console.log('SCROLLING E');
-    const element = document.getElementById('experiences');
-
+const scrollToElement = (id: string) => {
+    const element = document.getElementById(id);
     if (element) {
-        scrollToElement(element);
-    }
-};
+        const startY = window.pageYOffset;
+        const diff = element?.getBoundingClientRect().y - startY;
+        const duration_ms = 1000;
+        var start: number;
 
-const scrollToProjects = () => {
-    console.log('SCROLLING P');
-    const element = document.getElementById('projects');
+        window.requestAnimationFrame(function step(timestamp) {
+            if (!start) start = timestamp;
 
-    if (element) {
-        scrollToElement(element);
-    }
-};
+            var time = timestamp - start;
+            var percent = Math.min(time / duration_ms, 1);
+            window.scrollTo(0, startY + diff * percent);
 
-const scrollToTop = () => {
-    const element = document.querySelector('h1');
-
-    if (element) {
-        scrollToElement(element);
+            if (time < duration_ms) {
+                window.requestAnimationFrame(step);
+            }
+        });
     }
 };
 
@@ -69,11 +46,17 @@ export default function Main() {
             >
                 <div>
                     <div className='main_header'>
-                        <h1 className='main_name'> Victor Araujo </h1>
+                        <h1 className='main_name' id='name'>
+                            Victor Araujo
+                        </h1>
                         <div className='main_navbar'>
                             <Navbar
-                                scrollToExperiences={scrollToExperiences}
-                                scrollToProjects={scrollToProjects}
+                                scrollToExperiences={() => {
+                                    scrollToElement('experiences');
+                                }}
+                                scrollToProjects={() => {
+                                    scrollToElement('projects');
+                                }}
                             />
                         </div>
                     </div>
@@ -101,7 +84,13 @@ export default function Main() {
                 </p>
                 <Projects />
             </section>
-            <button id={BACK_TO_TOP_BUTTON_ID} className='main_btt_btn' onClick={scrollToTop}>
+            <button
+                id={BACK_TO_TOP_BUTTON_ID}
+                className='main_btt_btn'
+                onClick={() => {
+                    scrollToElement('name');
+                }}
+            >
                 <img alt='up arrow' src='icons/black/arrow.png' />
             </button>
         </div>
