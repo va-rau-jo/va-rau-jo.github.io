@@ -3,9 +3,11 @@ import data from '../data/data.json';
 const getCell = (entry: any, i: number) => {
     const logos: { [index: string]: any } = data.logos;
     const side = i % 2 === 0 ? '_left' : '_right';
+    const logoClass = ' exp_company_logo' + side;
+    const hoverClass = ' exp_company_logo_hover' + side;
     return (
         <td className='exp_item_container'>
-            <div className={'exp_company_logo exp_company_logo' + side + ' hvr-bubble-float-right'}>
+            <div className={'exp_company_logo exp_company_logo_hover' + logoClass + hoverClass}>
                 <img alt='Company logo' src={logos[entry.company.toLowerCase()]} />
             </div>
             <div className='exp_item_content'>
@@ -22,8 +24,7 @@ const getCell = (entry: any, i: number) => {
                                 src='icons/white/calendar.png'
                             />
                             <span>
-                                {' '}
-                                {entry.start_date} - {entry.end_date}{' '}
+                                {entry.start_date} - {entry.end_date}
                             </span>
                         </div>
                         <div className='exp_label_container'>
@@ -33,8 +34,7 @@ const getCell = (entry: any, i: number) => {
                                 src='icons/white/marker.png'
                             />
                             <span>
-                                {' '}
-                                {entry.location} {entry.remote ? '(Remote)' : ''}{' '}
+                                {entry.location} {entry.remote ? '(Remote)' : ''}
                             </span>
                         </div>
                     </div>

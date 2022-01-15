@@ -3,6 +3,7 @@ $company_name_color: #ffb182;
 $company_name_offset: 2em;
 // Radius of company logo image
 $logo_radius: 1.5em;
+$logo_padding: 2em;
 
 .exp_accomplishments {
     border-radius: $rounded_corners;
@@ -22,7 +23,8 @@ $logo_radius: 1.5em;
 .exp_company_logo {
     border-radius: 50%;
     height: $logo_radius * 2;
-    margin-top: 2em;
+    margin-top: 1em;
+    padding: 1em $logo_padding;
     position: absolute;
     top: 0;
     width: $logo_radius * 2;
@@ -34,11 +36,11 @@ $logo_radius: 1.5em;
 }
 
 .exp_company_logo_left {
-    right: -$logo_radius;
+    right: -$logo_radius - $logo_padding;
 }
 
 .exp_company_logo_right {
-    left: -$logo_radius;
+    left: -$logo_radius - $logo_padding;
 }
 
 .exp_company_name {
@@ -69,6 +71,55 @@ $logo_radius: 1.5em;
     padding: $company_name_offset 0;
     position: relative;
     width: 50%;
+}
+
+// -- Hover animation for company logo
+
+// On hover, styling for the arrow
+.exp_item_container:hover .exp_company_logo_hover:before {
+    border-style: solid;
+    border-width: 0.5em;
+    content: '';
+    position: absolute;
+    right: $logo_padding + 1em;
+    top: calc(50% - 0.5em);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+// Hover transitions no matter the direction
+.exp_company_logo_hover {
+    transition: all 0.5s ease;
+}
+
+// [LEFT] Company logo has specific translation direction
+.exp_item_container:active .exp_company_logo_hover_left,
+.exp_item_container:focus .exp_company_logo_hover_left,
+.exp_item_container:hover .exp_company_logo_hover_left {
+    transform: translateX(-$logo_radius - 1em);
+}
+
+// [LEFT] arrow needs specific border color and translation direction
+.exp_item_container:active .exp_company_logo_hover_left::before,
+.exp_item_container:focus .exp_company_logo_hover_left::before,
+.exp_item_container:hover .exp_company_logo_hover_left::before {
+    border-color: transparent #e1e1e1 transparent transparent;
+    transform: translateX(-$logo_radius - 1em);
+}
+
+// [RIGHT] Company logo has specific translation direction
+.exp_item_container:active .exp_company_logo_hover_right,
+.exp_item_container:focus .exp_company_logo_hover_right,
+.exp_item_container:hover .exp_company_logo_hover_right {
+    transform: translateX($logo_radius + 1em);
+}
+
+// [RIGHT] arrow needs specific border color and translation direction
+.exp_item_container:active .exp_company_logo_hover_right:before,
+.exp_item_container:focus .exp_company_logo_hover_right:before,
+.exp_item_container:hover .exp_company_logo_hover_right:before {
+    border-color: transparent transparent transparent #e1e1e1;
+    transform: translateX($logo_radius + 1em);
 }
 
 .exp_item_labels {

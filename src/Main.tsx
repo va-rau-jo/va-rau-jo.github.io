@@ -52,13 +52,13 @@ const scrollToTop = () => {
 };
 
 // Enable back to top button to only appear at bottom of page
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
     const section = document.getElementById(PROJECT_DIV_ID);
     const button = document.getElementById(BACK_TO_TOP_BUTTON_ID);
     if (!section || !button) return;
     const visible = section.getBoundingClientRect().top <= window.innerHeight;
     button.style.opacity = visible ? '1' : '0';
-};
+});
 
 export default function Main() {
     return (
