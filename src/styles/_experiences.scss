@@ -23,8 +23,7 @@ $logo_padding: 2em;
 .exp_company_logo {
     border-radius: 50%;
     height: $logo_radius * 2;
-    margin-top: 1em;
-    padding: 1em $logo_padding;
+    padding: 0 $logo_padding;
     position: absolute;
     top: 0;
     width: $logo_radius * 2;
