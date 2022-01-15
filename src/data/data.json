@@ -123,6 +123,30 @@
             "year": "2021"
         },
         {
+            "contribution": "I created the initial landing page and implemented the filterable list of opportunities",
+            "deployed_icon": "uw.png",
+            "deployed_url": "https://servicelearning.washington.edu/",
+            "description": "A website connecting volunteer health and community care organizations to students",
+            "features": [
+                "Users can view and filter opportunities by region",
+                "Detailed view opens when an opportunity is clicked",
+                "Admins can create and delete events through the admin website"
+            ],
+            "front-end": "React",
+            "image": "servicelearning.png",
+            "name": "UW Service-Learning Website",
+            "sources": [
+                "https://github.com/wwami-pipeline/sign-up-website",
+                "https://github.com/wwami-pipeline/admin-website"
+            ],
+            "technologies": [
+                { "icon": "react.png", "name": "React" },
+                { "icon": "firebase.png", "name": "Firebase" },
+                { "icon": "javascript.png", "name": "Javascript" }
+            ],
+            "year": "2019"
+        },
+        {
             "contribution": "I connected Google's Natural Language Processing API to our application, and interpreted its results to display on the front-end",
             "description": "If you apply to many jobs or internships, it can be hard to keep track of the recruitment stages you are in. TMI helps you organize recruiter emails and automatically track all of your recruitment stages",
             "features": [

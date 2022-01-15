@@ -14,11 +14,12 @@ $overlay_font_size: 1vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 4px;
     padding: 0.25em 0;
-    width: 9em;
+    width: 18%;
 }
 
-.projects_deployed_1 {
+.projects_deployed_item {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ $overlay_font_size: 1vw;
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    width: 82%;
 }
 
 .projects_description {
@@ -265,7 +266,7 @@ $overlay_font_size: 1vw;
 }
 
 .projects_try_label {
-    font-size: $h7;
+    font-size: $h6;
     font-weight: bold;
     text-align: center;
 }

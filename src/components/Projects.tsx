@@ -96,7 +96,7 @@ const Projects = () => {
                             </div>
                             <div className='projects_deployed_div'>
                                 {entry.deployed_url ? (
-                                    <div className='projects_deployed_1'>
+                                    <div className='projects_deployed_item'>
                                         <span className='projects_try_label'> Try Now! </span>
                                         <a
                                             className='projects_try_icon'
@@ -112,7 +112,7 @@ const Projects = () => {
                                         </a>
                                     </div>
                                 ) : null}
-                                <div className='projects_deployed_1'>
+                                <div className='projects_deployed_item'>
                                     <span className='projects_try_label'>
                                         {' '}
                                         View Source{entry.sources.length > 1 ? 's' : ''}{' '}

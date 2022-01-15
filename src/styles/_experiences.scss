@@ -68,7 +68,6 @@ $logo_padding: 2em;
 }
 
 .exp_item_container {
-    padding: $company_name_offset 0;
     position: relative;
     width: 50%;
 }
@@ -140,7 +139,7 @@ $logo_padding: 2em;
 }
 
 .exp_table {
-    margin: auto;
+    margin: 1em auto;
     width: 90%;
 }
 
@@ -157,7 +156,7 @@ $logo_padding: 2em;
     justify-content: space-evenly;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0 1em 1em 1em;
+    padding: 0 1em;
     width: 50%;
 }
 
@@ -249,7 +248,8 @@ $logo_padding: 2em;
     .exp_item_content {
         background-color: #76767645;
         border-radius: $rounded_corners;
-        margin-top: $logo_radius;
+        margin-top: $logo_radius * 2 + 0.5em;
+        padding-bottom: 0.5em;
     }
 
     .exp_item {
