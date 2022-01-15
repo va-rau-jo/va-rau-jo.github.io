@@ -83,7 +83,6 @@ $logo_padding: 2em;
     position: absolute;
     right: $logo_padding + 1em;
     top: calc(50% - 0.5em);
-    transition: all 0.5s ease;
     z-index: 1;
 }
 
@@ -230,14 +229,21 @@ $logo_padding: 2em;
         margin: 0 auto;
     }
 
-    .exp_company_logo_left {
+    .exp_company_logo_left,
+    .exp_company_logo_right {
         left: 0;
         right: 0;
     }
 
-    .exp_company_logo_right {
-        left: 0;
-        right: 0;
+    .exp_item_container:hover,
+    .exp_company_logo_hover,
+    .exp_item_container:hover .exp_company_logo_hover_left,
+    .exp_item_container:hover .exp_company_logo_hover_right {
+        transform: none;
+    }
+
+    .exp_company_logo_hover::before {
+        display: none;
     }
 
     .exp_item_content {
@@ -255,10 +261,7 @@ $logo_padding: 2em;
         width: 100%;
     }
 
-    #exp_role_hyphen {
-        display: none;
-    }
-
+    #exp_role_hyphen,
     .exp_timeline {
         display: none;
     }

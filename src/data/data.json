@@ -82,7 +82,7 @@
             "contribution": "I was the sole contributor to this project, developing both the server and client",
             "deployed_icon": "heroku.png",
             "deployed_url": "https://spotify-trender.herokuapp.com/",
-            "description": "A web app utilizing the Spotify API to track monthly playlists and improve playlist management",
+            "description": "A web application utilizing the Spotify API to track monthly playlists and improve playlist management",
             "features": [
                 "Users can view their Spotify playlists and songs",
                 "Songs can be compared across monthly playlists",
@@ -105,13 +105,12 @@
             "year": "2021"
         },
         {
-            "contribution": "I was the sole contributor to this project, developing both the server and client",
-            "description": "A web app that organizes recruiter emails to keep track of all your recruitment stages",
+            "contribution": "I connected Google's Natural Language Processing API to our application, and interpreted its results to display on the front-end",
+            "description": "If you apply to many jobs or internships, it can be hard to keep track of the recruitment stages you are in. TMI helps you organize recruiter emails and automatically track all of your recruitment stages",
             "features": [
-                "Uses Gmail API to access emails and filters by email domains",
-                "Songs can be compared across monthly playlists",
-                "Users can play the songs in their monthly playlists through the web app",
-                "Playlist manager allowing for easy combining of playlists"
+                "Uses the Gmail API to access emails and filters by email domains",
+                "Leverages Google's Natural Language Processing library to get the tone and keywords of an email",
+                "Allows for user toggling of specific emails and email domains"
             ],
             "front-end": "React",
             "image": "tmi.png",

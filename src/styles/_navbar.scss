@@ -3,14 +3,6 @@
     text-decoration: none;
 }
 
-.navbar_navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
 .navbar_item {
     cursor: pointer;
     font-size: $h4;
@@ -18,15 +10,21 @@
     padding: 0;
 }
 
-.navbar_item:hover,
+.navbar_item:active,
 .navbar_item:focus,
-.navbar_item:active {
-    animation-name: animation-bob-up;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+.navbar_item:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
 }
 
 .navbar_item h5 {
     margin: 0;
+}
+
+.navbar_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }

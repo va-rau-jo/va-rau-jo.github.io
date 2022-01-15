@@ -1,13 +1,23 @@
+// 2 second animation time recommended
+@keyframes animation-bob-down {
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .contact_icon {
     height: $h2;
     width: $h2;
 }
 
-.contact_icon:hover,
-.contact_icon:focus,
-.contact_icon:active {
+.contact_item:hover .contact_icon,
+.contact_item:focus .contact_icon,
+.contact_item:active .contact_icon {
     animation-name: animation-bob-down;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }

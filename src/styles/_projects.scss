@@ -33,7 +33,7 @@ $overlay_font_size: 1vw;
 
 .projects_description {
     color: #444444;
-    font-size: 1.1vw;
+    font-size: $h6;
     margin: auto 0 auto 16px;
     padding: 0.25em 0;
 }
@@ -274,7 +274,7 @@ $overlay_font_size: 1vw;
     $overlay_font_size: 3.5vw;
 
     .projects_description {
-        font-size: $h6;
+        font-size: $h7;
     }
 
     .projects_ends_container > div {
@@ -292,6 +292,10 @@ $overlay_font_size: 1vw;
     .projects_feature_list {
         font-size: $overlay_font_size;
         padding: 1em 1em 1em 1.5em;
+    }
+
+    .projects_header_div {
+        height: 10em;
     }
 
     .projects_hover_info_hover {

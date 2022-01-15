@@ -9,22 +9,3 @@ $h8: 0.8em;
 
 $rounded_corners: 0.5em;
 $rounded_corners_subtle: 4px;
-
-// 1.5 second animation time recommended
-@keyframes animation-bob-down {
-    50% {
-        transform: translateY(8px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes animation-bob-up {
-    50% {
-        transform: translateY(-8px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
