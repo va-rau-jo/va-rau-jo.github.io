@@ -70,8 +70,7 @@ export default function Main() {
             >
                 <div>
                     <p id='experiences' className='main_section_title'>
-                        {' '}
-                        Experiences{' '}
+                        Experiences
                     </p>
                     <Experiences />
                 </div>
@@ -79,8 +78,7 @@ export default function Main() {
             <div className='main_divider' />
             <section id={PROJECT_DIV_ID} className='main_section3'>
                 <p id='projects' className='main_section_title'>
-                    {' '}
-                    Projects{' '}
+                    Projects
                 </p>
                 <Projects />
             </section>

@@ -1,7 +1,8 @@
 {
     "logos": {
         "facebook": "images/facebook.png",
-        "google": "images/google.png"
+        "google": "images/google.png",
+        "microsoft": "images/microsoft.png"
     },
     "experiences": [
         {
@@ -74,6 +75,23 @@
                 { "icon": "java.png", "name": "Java" },
                 { "icon": "heroku.png", "name": "Heroku" }
             ]
+        },
+        {
+            "accomplishments": [
+                "Developed an internal web-app built with MVC Razor Pages and JavaScript",
+                "Deployed for the Cortana On-the-go and Bing Maps Measurement Team"
+            ],
+            "company": "Microsoft",
+            "end_date": "August 2018",
+            "location": "Bellevue, WA",
+            "remote": false,
+            "role": "Software Engineering Intern",
+            "start_date": "June 2018",
+            "technologies": [
+                { "icon": "csharp.png", "name": "C#" },
+                { "icon": "dotnet.png", "name": ".NET" },
+                { "icon": "javascript.png", "name": "Javascript" }
+            ]
         }
     ],
     "projects": [
@@ -124,6 +142,28 @@
                 { "icon": "javascript.png", "name": "Javascript" }
             ],
             "year": "2019"
+        },
+        {
+            "back-end": "Node",
+            "contribution": "I was the sole contributor to this project, developing both the server and client",
+            "description": "A multiplayer game inspired by Bright's Law. Using the 3 numbers provided and using addition, subtraction, multiplication, division, reach a multiple of 10 before your opponent!",
+            "features": [
+                "Allows for creating and joining of private lobbies",
+                "Customizable number of rounds and other game settings",
+                "Handles asynchronous user input and network delays to time players"
+            ],
+            "front-end": "React",
+            "image": "bl_racer.png",
+            "name": "BL Racer",
+            "sources": [
+                "https://github.com/va-rau-jo/bl_racer",
+                "https://github.com/va-rau-jo/brights_law"
+            ],
+            "technologies": [
+                { "icon": "react.png", "name": "React" },
+                { "icon": "node.png", "name": "Node" }
+            ],
+            "year": "2021"
         }
     ]
 }
