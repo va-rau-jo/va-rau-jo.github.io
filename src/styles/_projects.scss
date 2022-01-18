@@ -128,6 +128,8 @@ $overlay_font_size: 1vw;
 
 // Container holding image and overlay
 .projects_overlay_container {
+    background-color: black;
+    display: flex;
     flex-grow: 1;
     position: relative;
 }
@@ -308,7 +310,8 @@ $overlay_font_size: 1vw;
     }
 
     .projects_img {
-        object-fit: cover;
+        height: auto;
+        margin: auto;
     }
 
     .projects_item {

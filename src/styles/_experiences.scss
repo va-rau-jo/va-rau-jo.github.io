@@ -175,7 +175,6 @@ $logo_padding: 2em;
 }
 
 .exp_tech_list_item:hover {
-    // TODO: fix color / more interesting hover perhaps
     background: #858585aa;
 }
 
@@ -184,10 +183,10 @@ $logo_padding: 2em;
 }
 
 .exp_tech_list_text {
-    position: absolute;
     bottom: -$h5;
     font-size: $h6;
     font-weight: bold;
+    position: absolute;
     text-align: center;
     visibility: hidden;
     white-space: nowrap;
@@ -247,8 +246,8 @@ $logo_padding: 2em;
     .exp_item_content {
         background-color: #76767645;
         border-radius: $rounded_corners;
-        margin-top: $logo_radius * 2 + 0.5em;
-        padding-bottom: 0.5em;
+        margin: $logo_radius * 2 + 0.25em 0 1em 0;
+        padding-bottom: 1em;
     }
 
     .exp_item {
