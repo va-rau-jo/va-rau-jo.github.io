@@ -107,4 +107,18 @@ main {
     .main_navbar {
         margin: auto;
     }
+
+    .main_section_title {
+        margin: 0.5em 0 0 0;
+    }
+}
+
+@media only print {
+    .main_section1 {
+        height: 100vh;
+    }
+
+    .main_section_title {
+        margin: 0.5em 0 0 0;
+    }
 }
