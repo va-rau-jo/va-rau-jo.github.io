@@ -59,7 +59,11 @@ main {
 .main_section1 {
     background-size: cover;
     color: white;
-    height: 80vh;
+    height: 100%;
+    // position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-10px) scale(2);
+    width: 100%;
 }
 
 // Dims the background image
@@ -74,6 +78,9 @@ main {
     background-size: 100vw;
     background-color: #bbbbbb;
     color: white;
+    // position: absolute;
+    // transform-style: preserve-3d;
+    // transform: translateZ(-10px) scale(2);
 }
 
 // Dims the background image
@@ -92,6 +99,9 @@ main {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 3em;
+    // position: absolute;
+    // transform-style: preserve-3d;
+    // transform: translateZ(-10px) scale(2);
 }
 
 .main_section_title {
