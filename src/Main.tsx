@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
 
 export default function Main() {
     return (
-        <>
+        <div>
             <header
                 className='main_section1'
                 style={{ backgroundImage: 'url(images/seattle.jpg)' }}
@@ -91,6 +91,6 @@ export default function Main() {
             >
                 <img alt='up arrow' src='icons/black/arrow.png' />
             </button>
-        </>
+        </div>
     );
 }
