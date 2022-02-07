@@ -188,6 +188,28 @@
                 { "icon": "node.png", "name": "Node" }
             ],
             "year": "2021"
+        },
+        {
+            "back-end": "Node",
+            "contribution": "I was the sole contributor to this project",
+            "deployed_icon": "youtube.png",
+            "deployed_url": "https://www.youtube.com/watch?v=1_51c_6ueUY",
+            "description": "A solver for the popular word game \"Wordle\", where you must guess a random 5 letter word within 6 guesses. You are told whether the letter is not present, present, or in the correct spot.",
+            "features": [
+                "Used Selenium to open a local browser and connect to the Wordle clone website",
+                "Developed a custom algorithm to solve Wordles in 6 guesses or less",
+                "Input answers using the Selenium browser driver and interpreted results by scraping the web page."
+            ],
+            "front-end": "Javascript",
+            "image": "wordle_solver.png",
+            "name": "Wordle Solver",
+            "sources": ["https://github.com/va-rau-jo/wordle-solver"],
+            "technologies": [
+                { "icon": "node.png", "name": "Node" },
+                { "icon": "javascript.png", "name": "Javascript" },
+                { "icon": "selenium.png", "name": "Selenium" }
+            ],
+            "year": "2021"
         }
     ]
 }

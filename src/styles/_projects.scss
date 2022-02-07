@@ -253,8 +253,10 @@ $overlay_font_size: 1vw;
 }
 
 .projects_try_icon {
+    align-items: center;
+    display: flex;
     height: $deployed_button_size;
-    margin: 2px 0;
+    padding: 2px;
     width: $deployed_button_size;
 }
 

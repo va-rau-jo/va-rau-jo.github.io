@@ -97,7 +97,7 @@ const Projects = () => {
                             <div className='projects_deployed_div'>
                                 {entry.deployed_url ? (
                                     <div className='projects_deployed_item'>
-                                        <span className='projects_try_label'> Try Now! </span>
+                                        <span className='projects_try_label'> Demo </span>
                                         <a
                                             className='projects_try_icon'
                                             key={i}
